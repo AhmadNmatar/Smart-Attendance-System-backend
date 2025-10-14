@@ -1,0 +1,36 @@
+from typing import Optional, List
+from sqlmodel import SQLModel, Field, Relationship
+from pydantic import BaseModel
+# ======================== Person =================================
+class PersonBase(SQLModel):
+    first_name: str
+    surname: str
+    
+
+class Person(PersonBase, table=True):
+    person_id: int | None = Field(default=None, primary_key=True)
+    embedding_id: int = Field(foreign_key="embedding.embedding_id", unique=True, index=True)
+    email: str
+
+    embeddings: Optional["Embedding"] = Relationship(back_populates="Person")
+    attendances: List["Attendance"] = Relationship(back_populates="Person")
+
+
+class PersonPublic(PersonBase):
+    email: str
+    person_id: int
+
+class PersonCreate(PersonBase):
+    embedding_id: int
+
+
+
+
+
+
+
+# =========================== Embedding ================================
+
+
+
+
