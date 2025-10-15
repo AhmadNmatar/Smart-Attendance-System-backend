@@ -17,7 +17,7 @@ class AttendanceBase(SQLModel):
     date: date
     time: time
 
-class Attendance(SQLModel, table=True):
+class Attendance(SQLModel, table=True, sqlite_autoincrement=True):
     attendance_id: int | None = Field(default=None, primary_key=True)
     person_id: int = Field(foreign_key="person.person_id")
     status_id: int = Field(foreign_key="status.status_id")

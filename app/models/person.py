@@ -7,7 +7,7 @@ class PersonBase(SQLModel):
     surname: str
     
 
-class Person(PersonBase, table=True):
+class Person(PersonBase, table=True, sqlite_autoincrement=True):
     person_id: int | None = Field(default=None, primary_key=True)
     embedding_id: int = Field(foreign_key="embedding.embedding_id", unique=True, index=True)
     email: str

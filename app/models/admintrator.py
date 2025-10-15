@@ -11,7 +11,7 @@ class AdministratorBase(SQLModel):
     email: str
 
 
-class Administrator(SQLModel, table=True):
+class Administrator(SQLModel, table=True, sqlite_autoincrement=True):
     admin_id: int | None = Field(default=None, primary_key=True)
     first_name: str
     surname: str
