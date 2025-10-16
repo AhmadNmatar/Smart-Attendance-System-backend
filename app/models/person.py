@@ -1,7 +1,9 @@
 from typing import Optional, List
 from sqlmodel import SQLModel, Field, Relationship
 from pydantic import BaseModel
-# ======================== Person =================================
+
+
+
 class PersonBase(SQLModel):
     first_name: str
     surname: str
@@ -22,15 +24,3 @@ class PersonPublic(PersonBase):
 
 class PersonCreate(PersonBase):
     embedding_id: int
-
-
-
-
-
-
-
-# =========================== Embedding ================================
-
-
-
-
