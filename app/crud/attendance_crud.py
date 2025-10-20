@@ -95,7 +95,7 @@ def get_attendance_by_pk(id: int, session: Session) -> Optional[AttendanceDTO]:
   
 def mark_attendance(attendance: AttendanceCreate, session: Session) -> Optional[AttendanceDTO]:
     try:
-        db_attendance = Attendance.model_validate(attendance)  # create Attendance from Pydantic model
+        db_attendance = Attendance.model_validate(attendance)  
         session.add(db_attendance)
         session.commit()
         session.refresh(db_attendance)
@@ -104,4 +104,5 @@ def mark_attendance(attendance: AttendanceCreate, session: Session) -> Optional[
 
     except Exception:
         session.rollback()
-        return None  
+        return None
+
