@@ -26,7 +26,7 @@ def verify_admin(email: str, entered_password: str, session: Session) -> Optiona
         raise ValueError("Password is not correct")
     
 
-def create_admin(admin: AdministratorCreate, session: Session) -> Optional[AdministratorPublic]:
+def create_new_admin(admin: AdministratorCreate, session: Session) -> Optional[AdministratorPublic]:
     try:
         password_bytes = admin.password.encode("utf-8")
         hashed_password = bcrypt.hashpw(password_bytes, bcrypt.gensalt()).decode("utf-8")
