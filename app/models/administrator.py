@@ -16,7 +16,7 @@ class Administrator(AdministratorBase, table=True, sqlite_autoincrement=True):
     first_name: str
     surname: str
     password: str  # always hashed
-    email: str = Field(index=True)
+    email: str = Field(index=True, unique=True)
 
 class AdministratorPublic(AdministratorBase):
     admin_id: int
@@ -25,3 +25,8 @@ class AdministratorPublic(AdministratorBase):
 class AdministratorCreate(AdministratorBase):
     password: str
 
+
+class TokenResponse(SQLModel):
+    access_token: str
+    token_type: str
+    admin: AdministratorPublic

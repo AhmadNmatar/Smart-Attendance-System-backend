@@ -1,7 +1,7 @@
 from typing import Optional
 from sqlmodel import Session, select
-from app.models.admintrator import Administrator, AdministratorPublic, AdministratorCreate
-import bcrypt
+from app.models.administrator import Administrator, AdministratorPublic, AdministratorCreate
+from app.utils.password_utils import get_password_hash, verify_password
 
 
 def get_admin_by_email(email:str, session :Session) -> Optional[Administrator]:
@@ -17,10 +17,9 @@ def verify_admin(email: str, entered_password: str, session: Session) -> Optiona
         return None
 
     stored_hash = admin.password
-    entered_bytes = entered_password.encode("utf-8")
-    stored_bytes = stored_hash.encode("utf-8")
+    entered_password = get_password_hash(entered_password)
 
-    if bcrypt.checkpw(entered_bytes, stored_bytes):
+    if verify_password(stored_hash, entered_password):
         return AdministratorPublic.model_validate(admin)
     else:
         raise ValueError("Password is not correct")
@@ -28,16 +27,8 @@ def verify_admin(email: str, entered_password: str, session: Session) -> Optiona
 
 def create_new_admin(admin: AdministratorCreate, session: Session) -> Optional[AdministratorPublic]:
     try:
-        password_bytes = admin.password.encode("utf-8")
-        hashed_password = bcrypt.hashpw(password_bytes, bcrypt.gensalt()).decode("utf-8")
-
-        new_admin = Administrator(
-            first_name=admin.first_name,
-            surname=admin.surname,
-            email=admin.email,
-            password=hashed_password
-        )
-
+      
+        new_admin = Administrator(**admin.model_dump())
         session.add(new_admin)
         session.commit()
         session.refresh(new_admin)

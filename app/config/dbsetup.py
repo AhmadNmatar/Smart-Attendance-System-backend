@@ -1,5 +1,5 @@
 from sqlmodel import SQLModel, create_engine, Session
-
+from typing import Annotated
 from dotenv import load_dotenv
 from fastapi import Depends
 import os
@@ -15,3 +15,4 @@ def get_session():
         yield session
 
 
+SessionDep = Annotated[Session, Depends(get_session)]

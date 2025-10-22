@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
 from typing import Annotated
-from app.config.dbsetup import get_session
+from app.config.dbsetup import get_session, SessionDep
 from app.crud.person_crud import create_person, get_person_by_pk
 from app.models.person import PersonPublic, PersonCreate
 
@@ -9,7 +9,7 @@ from app.models.person import PersonPublic, PersonCreate
 person_router = APIRouter(prefix="/person", tags=["Person"])
 
 
-SessionDep = Annotated[Session, Depends(get_session)]
+
 
 @person_router.post("/", response_model=PersonPublic)
 def create_new_person(person: PersonCreate, session: SessionDep)-> PersonPublic:
