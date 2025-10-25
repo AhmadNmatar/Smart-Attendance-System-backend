@@ -9,7 +9,7 @@ from app.models.person import PersonPublic, PersonCreate
 person_router = APIRouter(prefix="/person", tags=["Person"])
 
 
-
+# need to current_admin_dep so only authorized user can make request
 
 @person_router.post("/", response_model=PersonPublic)
 def create_new_person(person: PersonCreate, session: SessionDep)-> PersonPublic:
