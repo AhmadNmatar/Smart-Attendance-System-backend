@@ -17,9 +17,7 @@ def verify_admin(email: str, entered_password: str, session: Session) -> Optiona
         return None
 
     stored_hash = admin.password
-    entered_password = get_password_hash(entered_password)
-
-    if verify_password(stored_hash, entered_password):
+    if verify_password(entered_password, stored_hash):
         return AdministratorPublic.model_validate(admin)
     else:
         raise ValueError("Password is not correct")

@@ -8,7 +8,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from app.models.administrator import AdministratorPublic
 from app.config.dbsetup import SessionDep
-from app.crud.admin_crud import get_admin_by_email
+from app.cruds.admin_crud import get_admin_by_email
 
 
 SECRET_KEY = os.getenv("JWT_SECRET")

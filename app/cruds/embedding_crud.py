@@ -1,5 +1,6 @@
-from ast import List
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Optional, Sequence, List
 from sqlmodel import Session, select
 from app.models.embedding import Embedding
 import numpy as np
@@ -28,23 +29,6 @@ def get_all(session: Session) -> Optional[List[Embedding]]:
     return embeddings
 
 
-# method should return the pk of the given embeddings vector, using cosin similarity 
-def get_embedding_pk(session: Session, target_emb: list[float]) -> Optional[int]:
-    embeddings = get_all(session)
-    if not embeddings:
-        return None
-
-    best_id = None
-    best_similarity = -1.0
-
-    for emb in embeddings:
-        similarity = cosine_similarity(target_emb, emb.vector)
-        if similarity > best_similarity:
-            best_similarity = similarity
-            best_id = emb.embedding_id
-
-    return best_id
-
 
 # cosine similarity: (A · B) / (||A|| * ||B||)
 def cosine_similarity(vec1: Sequence[float], vec2: Sequence[float]) -> float:
@@ -62,5 +46,5 @@ def cosine_similarity(vec1: Sequence[float], vec2: Sequence[float]) -> float:
     return float(similarity)
 
 # what may be need to fix here is:
-# 1. define a threshold now we take the one that higher than -1
+# 1. define a threshold, now we take the one that higher than -1
 # 2. try another approach to define the similarity between embeddings

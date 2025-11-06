@@ -24,3 +24,4 @@ class PersonPublic(PersonBase):
 
 class PersonCreate(PersonBase):
     embedding_id: int
+    email: str

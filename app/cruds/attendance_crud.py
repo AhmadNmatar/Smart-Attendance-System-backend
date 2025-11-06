@@ -93,7 +93,7 @@ def get_attendance_by_pk(id: int, session: Session) -> Optional[AttendanceDTO]:
     )
 
   
-def mark_attendance(attendance: AttendanceCreate, session: Session) -> Optional[AttendanceDTO]:
+def add_attendance(attendance: AttendanceCreate, session: Session) -> Optional[AttendanceDTO]:
     try:
         db_attendance = Attendance.model_validate(attendance)  
         session.add(db_attendance)
@@ -105,4 +105,5 @@ def mark_attendance(attendance: AttendanceCreate, session: Session) -> Optional[
     except Exception:
         session.rollback()
         return None
+
 

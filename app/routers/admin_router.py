@@ -6,7 +6,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlmodel import Session
 from app.config.dbsetup import get_session, SessionDep
 from app.models.administrator import AdministratorCreate, AdministratorPublic, Administrator, TokenResponse
-from app.crud.admin_crud import verify_admin, create_new_admin, get_admin_by_email
+from app.cruds.admin_crud import verify_admin, create_new_admin, get_admin_by_email
 from app.utils.auth import auth_dep, get_current_admin, create_access_token
 from app.utils.password_utils import get_password_hash
 
@@ -29,6 +29,7 @@ def signup_admin(admin: AdministratorCreate, session: SessionDep):
 @admin_router.post("/login", response_model=TokenResponse)
 def login(session: SessionDep, form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
     try:
+        print(form_data.username)
         admin = verify_admin(form_data.username, form_data.password, session)
     except ValueError:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")
