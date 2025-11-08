@@ -3,7 +3,6 @@ import os
 from typing import Annotated
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
-from sqlmodel import Session
 from app.config.dbsetup import get_session, SessionDep
 from app.models.administrator import AdministratorCreate, AdministratorPublic, Administrator, TokenResponse
 from app.cruds.admin_crud import verify_admin, create_new_admin, get_admin_by_email

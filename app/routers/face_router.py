@@ -2,9 +2,6 @@ from fastapi import APIRouter, HTTPException, Depends, Query, UploadFile, File, 
 from pydantic import BaseModel
 from typing import Optional, List, Tuple
 import numpy as np
-import cv2
-import time
-import json
 import asyncio
 from sqlmodel import Session, select
 from app.services.camera_servic import Camera

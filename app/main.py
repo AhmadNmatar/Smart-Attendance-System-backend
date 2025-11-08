@@ -6,11 +6,6 @@ from app.config.dbsetup import engine
 from app.routers.admin_router import admin_router
 from app.routers.person_router import person_router
 from app.routers.status_router import status_router
-from app.models.administrator import Administrator
-from app.models.person import Person
-from app.models.embedding import Embedding
-from app.models.attendance import Attendance
-from app.models.status import Status
 from app.routers.face_router import router as face_router
 from app.services.camera_servic import Camera
 from app.services.face_service import InsightFaceEmbedder
