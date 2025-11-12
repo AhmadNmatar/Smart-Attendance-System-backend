@@ -7,9 +7,11 @@ from app.routers.admin_router import admin_router
 from app.routers.person_router import person_router
 from app.routers.status_router import status_router
 from app.routers.face_router import router as face_router
+from app.routers.attendance_router import attendance_router
 from app.services.camera_servic import Camera
 from app.services.face_service import InsightFaceEmbedder
 from app.routers import face_router as face_module
+from fastapi.middleware.cors import CORSMiddleware
 
 
 @asynccontextmanager
@@ -32,7 +34,17 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Smart Attendance System API", lifespan=lifespan)
 
+origins = ["*"]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=False,          
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(person_router)
 app.include_router(status_router)
 app.include_router(admin_router)
 app.include_router(face_router)
+app.include_router(attendance_router)

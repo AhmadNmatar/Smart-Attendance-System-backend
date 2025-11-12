@@ -48,16 +48,17 @@ class InsightFaceEmbedder:
             for e in embeddings: 
                 ref_emb = np.frombuffer(e.vector, dtype=np.float32)
                 similarity, is_match = cosine_similarity(emb, ref_emb) 
-                print({"simi" :float(similarity), "id" : e.embedding_id })
                 if similarity > best_score: 
                     best_score = similarity 
             
                     best_person = get_person_by_embedding_id(e.embedding_id, session) 
                     bbox = face.bbox.astype(int).tolist() 
-            result = { "bbox": bbox, 
-            "matched": bool(best_person is not None and best_score > 0.65),# threshold 
-                "person_name": best_person.first_name if best_person else None, 
-                "score": float(best_score) } 
+            matched = best_score > threshold
+            result = { "bbox": bbox,
+            "matched": matched,
+                "person_name": best_person.first_name,
+                "person_id" : best_person.person_id,
+                "score": float(best_score) }
                 
             results.append(result) 
 

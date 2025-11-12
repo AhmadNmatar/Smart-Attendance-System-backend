@@ -1,17 +1,29 @@
 from fastapi import APIRouter, HTTPException, Depends, Query, UploadFile, File, Form, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel
-from typing import Optional, List, Tuple
+from typing import Optional, List, Tuple, Annotated
 import numpy as np
 import asyncio
+import base64
+import cv2
+from datetime import date, datetime
 from sqlmodel import Session, select
 from app.services.camera_servic import Camera
 from app.services.face_service import InsightFaceEmbedder, calculate_embeddings_avg, cosine_similarity
 from app.config.dbsetup import engine
 from app.models.person import Person, PersonCreate
 from app.models.embedding import Embedding
-from app.models.attendance import Attendance
+from app.models.attendance import Attendance, AttendanceCreate
 from app.cruds.embedding_crud import add_new_emb, get_all
 from app.cruds.person_crud import create_person, get_person_by_embedding_id
+from app.cruds.attendance_crud import add_attendance
+from app.utils.auth import get_current_admin
+from app.models.administrator import Administrator
+from app.config.dbsetup import SessionDep
+
+
+
+current_admin_dep = Annotated[Administrator, Depends(get_current_admin)] 
+
 
 
 router = APIRouter(prefix="/face", tags=["face"])
@@ -20,9 +32,6 @@ router = APIRouter(prefix="/face", tags=["face"])
 camera: Optional[Camera] = None
 embedder: Optional[InsightFaceEmbedder] = None
 
-def get_session():
-    with Session(engine) as session:
-        yield session
 
 class EnrollReq(BaseModel):
     first_name: str
@@ -42,7 +51,7 @@ class RecognizeResp(BaseModel):
 
 
 @router.post("/enroll")
-def enroll_face(req: EnrollReq, session: Session = Depends(get_session)):
+def enroll_face(req: EnrollReq, session: SessionDep):
     global embedder
     emb = embedder.get_face_embedding_image(req.image_path)
     if emb is None:
@@ -70,7 +79,7 @@ def enroll_face(req: EnrollReq, session: Session = Depends(get_session)):
     }
 
 @router.post("/recognize_image")
-def recognize_faces(req : RecognizeReq, session: Session = Depends(get_session)):
+def recognize_faces(req : RecognizeReq, session: SessionDep):
     global embedder
 
     emb = embedder.get_face_embedding_image(req.image_path)
@@ -98,7 +107,7 @@ def recognize_faces(req : RecognizeReq, session: Session = Depends(get_session))
 
 
 @router.post("/enroll_images")
-def enroll_faces(req: EnrollReq, session: Session = Depends(get_session)):
+def enroll_faces(req: EnrollReq, session: SessionDep):
     global embedder
     images = req.image_path
     embs = []
@@ -133,8 +142,8 @@ def enroll_faces(req: EnrollReq, session: Session = Depends(get_session)):
 
 
 @router.websocket("/recognize_realtime")
-async def recognize_realtime(websocket: WebSocket, session: Session = Depends(get_session)): 
-    global camera, embedder 
+async def recognize_realtime(websocket: WebSocket, session: SessionDep): 
+    global embedder, camera
     await websocket.accept() 
     try: 
         if camera is None or embedder is None: 
@@ -162,7 +171,11 @@ async def recognize_realtime(websocket: WebSocket, session: Session = Depends(ge
                 continue 
 
             results = embedder.real_time_recognition(faces, embeddings, session, 0.65)
-            await websocket.send_json({"faces": results}) 
+            person_id = results[0]['person_id']
+            added_attendence = add_attendance(AttendanceCreate(person_id=person_id, status_id=1), session)
+
+
+            await websocket.send_json({"faces": results})
             await asyncio.sleep(0.1) 
                      # Control frame rate 
     except WebSocketDisconnect: 

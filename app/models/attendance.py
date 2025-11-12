@@ -2,13 +2,12 @@ from datetime import date, time, datetime
 from typing import Optional, List
 from sqlmodel import SQLModel, Field, Relationship
 from pydantic import BaseModel
-
+from sqlalchemy.types import Date as SA_Date, Time as SA_Time
 
 
 
 class AttendanceBase(SQLModel):
-    date: date
-    time: time
+    datum: date = Field(default_factory=date.today, sa_type=SA_Date)
 
 class Attendance(AttendanceBase, table=True, sqlite_autoincrement=True):
     attendance_id: int | None = Field(default=None, primary_key=True)
@@ -21,10 +20,8 @@ class Attendance(AttendanceBase, table=True, sqlite_autoincrement=True):
 class AttendanceDTO(SQLModel):
     attendance_id: int
     date: date
-    time: time
     first_name: str
     surname: str
-    email: str
     status_type: str
 
 class AttendanceCreate(AttendanceBase):
