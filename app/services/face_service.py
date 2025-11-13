@@ -5,6 +5,24 @@ from insightface.app import FaceAnalysis
 from app.cruds.person_crud import get_person_by_embedding_id
 
 # Quick Haar for coarse detection (fast). You can skip and just use FaceAnalysis on full frame if you prefer.
+haar = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+
+def detect_faces_haar(bgr_img: np.ndarray) -> List[Tuple[int,int,int,int]]:
+    gray = cv2.cvtColor(bgr_img, cv2.COLOR_BGR2GRAY)
+    faces = haar.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(80, 80))
+    return [(x, y, w, h) for (x, y, w, h) in faces]
+
+def crop_face(bgr_img: np.ndarray, box: Tuple[int,int,int,int], expand: float = 0.15) -> np.ndarray:
+    h, w = bgr_img.shape[:2]
+    x, y, bw, bh = box
+    cx, cy = x + bw/2, y + bh/2
+    side = int(max(bw, bh) * (1 + expand))
+    nx = int(max(0, cx - side/2))
+    ny = int(max(0, cy - side/2))
+    ex = int(min(w, nx + side))
+    ey = int(min(h, ny + side))
+    return bgr_img[ny:ey, nx:ex]
+
 
 model_name = "buffalo_l"
 class InsightFaceEmbedder:
@@ -25,7 +43,6 @@ class InsightFaceEmbedder:
             raise ValueError("No faces detected in the image")
         if len(faces) > 1:
             print("Warning: Multiple faces detected. Using first detected face")
-        print(faces[0].embedding)
         return faces[0].embedding.astype(np.float32)
     
 
