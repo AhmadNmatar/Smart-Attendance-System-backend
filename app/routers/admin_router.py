@@ -6,8 +6,8 @@ from fastapi.security import OAuth2PasswordRequestForm
 from app.config.dbsetup import get_session, SessionDep
 from app.models.administrator import AdministratorCreate, AdministratorPublic, Administrator, TokenResponse
 from app.cruds.admin_crud import verify_admin, create_new_admin, get_admin_by_email
-from app.utils.auth import auth_dep, get_current_admin, create_access_token
-from app.utils.password_utils import get_password_hash
+from app.services.auth import auth_dep, get_current_admin, create_access_token
+from app.services.password_utils import get_password_hash
 
 admin_router = APIRouter(prefix="/admin", tags=["Admin"])
 ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")

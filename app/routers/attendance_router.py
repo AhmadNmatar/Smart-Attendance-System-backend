@@ -5,7 +5,7 @@ from typing import Annotated, Optional
 from app.config.dbsetup import SessionDep
 from app.cruds.attendance_crud import get_attendances
 from app.models.attendance import  AttendanceDTO
-from app.utils.auth import get_current_admin
+from app.services.auth import get_current_admin
 from app.models.administrator import Administrator
 
 current_admin_dep = Annotated[Administrator, Depends(get_current_admin)] 

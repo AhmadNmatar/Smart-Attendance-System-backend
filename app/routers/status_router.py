@@ -4,7 +4,7 @@ from typing import Annotated
 from app.config.dbsetup import get_session, SessionDep
 from app.cruds.status_crud import get_status_id, add_new_status
 from app.models.status import Status
-from app.utils.auth import get_current_admin
+from app.services.auth import get_current_admin
 from app.models.administrator import Administrator
 
 status_router = APIRouter(prefix="/status", tags=["Status"])

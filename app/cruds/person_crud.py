@@ -8,9 +8,10 @@ def create_person(person_data: PersonCreate, session: Session) -> PersonPublic |
         session.commit()
         session.refresh(db_person)
         return PersonPublic.model_validate(db_person)
-    except Exception:
+    except Exception as e:  
         session.rollback()
-        return None  
+        return None
+    
 
 def get_person_by_pk(id: int, session: Session) -> PersonPublic | None:
     person = session.get(Person, id)

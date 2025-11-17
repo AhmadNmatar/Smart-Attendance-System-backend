@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 class PersonBase(SQLModel):
     first_name: str
-    surname: str
+    last_name: str
     
 
 class Person(PersonBase, table=True, sqlite_autoincrement=True):

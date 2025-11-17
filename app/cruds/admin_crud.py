@@ -1,7 +1,7 @@
 from typing import Optional
 from sqlmodel import Session, select
 from app.models.administrator import Administrator, AdministratorPublic, AdministratorCreate
-from app.utils.password_utils import get_password_hash, verify_password
+from app.services.password_utils import get_password_hash, verify_password
 
 
 def get_admin_by_email(email:str, session :Session) -> Optional[Administrator]:

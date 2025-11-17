@@ -21,7 +21,7 @@ class AttendanceDTO(SQLModel):
     attendance_id: int
     date: date
     first_name: str
-    surname: str
+    last_name: str
     status_type: str
 
 class AttendanceCreate(AttendanceBase):

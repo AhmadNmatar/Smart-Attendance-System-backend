@@ -19,7 +19,7 @@ async def lifespan(app: FastAPI):
     # DB
     SQLModel.metadata.create_all(engine)
     # Vision init
-    face_module.camera = Camera(index=0)
+    #face_module.camera = Camera(index=0)
     face_module.embedder = InsightFaceEmbedder()
     try:
         yield
@@ -28,13 +28,15 @@ async def lifespan(app: FastAPI):
         pass
     finally:
         # cleanup
-        if face_module.camera:
-            face_module.camera.release()
+       # if face_module.camera:
+       #     face_module.camera.release()
+       pass
 
 
 app = FastAPI(title="Smart Attendance System API", lifespan=lifespan)
 
-origins = ["*"]
+origins = [    "http://127.0.0.1:5000",
+    "http://localhost:5000",]
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

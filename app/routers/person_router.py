@@ -4,7 +4,7 @@ from typing import Annotated
 from app.config.dbsetup import get_session, SessionDep
 from app.cruds.person_crud import create_person, get_person_by_pk
 from app.models.person import PersonPublic, PersonCreate
-from app.utils.auth import get_current_admin
+from app.services.auth import get_current_admin
 from app.models.administrator import Administrator
 
 current_admin_dep = Annotated[Administrator, Depends(get_current_admin)] 
