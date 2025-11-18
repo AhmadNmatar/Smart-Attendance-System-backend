@@ -155,21 +155,34 @@ async def recognize_realtime(websocket: WebSocket, session: SessionDep):
 
             # Detect faces
             #rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            faces = embedder.app.get(frame) 
-            
-            if not faces:
-                await websocket.send_json({"faces": []}) 
-                await asyncio.sleep(0.1) 
-                continue 
+            faces = embedder.app.get(frame)
+            if len(faces) < 1:
+                websocket.send_json({"no face detected"})
+                await asyncio.sleep(0.1)
+                continue
+            if len(faces) > 1:
+                print("Warning: Multiple faces detected. Using first detected face")
 
-            results = embedder.real_time_recognition(faces, embeddings, session, 0.65)
+            results = embedder.find_match(faces[0], embeddings, session, 0.65)
+            created =[]
+            if not results[0]["matched"]:
+                 websocket.send_json({ "faces": results, "attendance": [] })
+                 continue
+
             person_id = results[0]['person_id']
-            added_attendence = add_attendance(AttendanceCreate(person_id=person_id, status_id=1), session)
+            if person_id not in seen_today:      
+                added = add_attendance(
+                    AttendanceCreate(person_id=results[0]["person_id"], status_id=1),
+                    session,
+                )
+                seen_today.add(person_id)
+                created.append(added)
+                await websocket.send_json({ "faces": results})
 
+            print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}}}")
 
-            await websocket.send_json({"faces": results})
+            await websocket.send_json({ "faces": results, "attendance":[]})
             await asyncio.sleep(0.1) 
-                     # Control frame rate 
     except WebSocketDisconnect: 
         pass 
     except Exception as e: 
@@ -236,19 +249,17 @@ def enroll_camera(req : EnrollReq, session: SessionDep):
     }
 
 
+seen_today = set()
 
 @router.post("/take_attendance")
-async def take_attendace(
-    request: Request,
-    session: SessionDep,  # same pattern you use in other routes
-):
+async def take_attendace(request: Request, session: SessionDep ):
     global embedder
     if embedder is None:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="Vision pipeline not ready",
         )
-    # ---- 1. Read raw bytes ----
+   
     try:
         raw_bytes: bytes = await request.body()
         if not raw_bytes:
@@ -262,7 +273,6 @@ async def take_attendace(
             detail="Unable to read request body",
         )
 
-    # ---- 2. Decode to OpenCV image ----
     nparr = np.frombuffer(raw_bytes, np.uint8)
     frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     if frame is None:
@@ -270,14 +280,9 @@ async def take_attendace(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Invalid image data",
         )
-
-    # ---- 3. Ensure vision pipeline is ready ----
-
-
-    # ---- 4. Load stored embeddings from DB ----
     embeddings = get_all(session)
     if not embeddings:
-        return {"faces": [], "attendance": []}
+        return {"No embeddings found in db"}
 
     # ---- 5. Detect faces ----
     faces = embedder.app.get(frame)  # same as you do in websocket
@@ -288,18 +293,19 @@ async def take_attendace(
         
 
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=0.65)
-
-    attendance_rows: List[dict] = []
+    
+    created ={}
     if not results[0]["matched"]:
             return { "faces": results, "attendance": [] }
-
-            
-    created = add_attendance(
-        AttendanceCreate(person_id=results[0]["person_id"], status_id=1),
-        session,
-    )
-    attendance_rows.append(created)
+    person_id = results[0]["person_id"]
+    if person_id not in seen_today:      
+        created = add_attendance(
+            AttendanceCreate(person_id=results[0]["person_id"], status_id=1),
+            session,
+        )
+        seen_today.add(person_id)
+        return { "faces": results, "attendance": created, "created": created}
 
     print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}}}")
 
-    return { "faces": results, "attendance": created, "created": created}
+    return { "faces": results, "attendance": {}, "created": created}
