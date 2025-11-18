@@ -5,7 +5,6 @@ import os
 from pathlib import Path
 
 def main(out_dir: str, cam_index: int = 0, timeout_ms: int = 15000):
-    # Prepare output directory
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -14,26 +13,25 @@ def main(out_dir: str, cam_index: int = 0, timeout_ms: int = 15000):
         print("ERR: Cannot open camera", file=sys.stderr)
         sys.exit(2)
 
-    title = "Enroll - capturing 10 images (Press Q to quit)"
+    title = "Enroll - Press SPACE to start capturing (Q to quit)"
     cv2.namedWindow(title, cv2.WINDOW_NORMAL)
     cv2.resizeWindow(title, 900, 600)
 
     start_time = time.time()
     saved = 0
     last_save_time = 0.0
+    started = False
 
     while True:
         ok, frame = cap.read()
         if not ok:
-            # If no frame and timeout reached, stop
             if (time.time() - start_time) * 1000 > timeout_ms:
                 break
             cv2.waitKey(1)
             continue
 
-        # Automatically save frames with a short delay between captures
         now = time.time()
-        if saved < 10 and (now - last_save_time) > 0.5:  # save every 0.5 sec
+        if started and saved < 10 and (now - last_save_time) > 0.5:
             filename = out_dir / f"frame_{saved + 1}.png"
             ok = cv2.imwrite(str(filename), frame)
             if not ok:
@@ -42,14 +40,18 @@ def main(out_dir: str, cam_index: int = 0, timeout_ms: int = 15000):
             saved += 1
             last_save_time = now
 
-        # Show preview
-        cv2.putText(frame, f"Saved: {saved}/10 (Q to quit)",
-                    (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        if started:
+            cv2.putText(frame, f"Saved: {saved}/10 (Q to quit)",
+                        (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+        else:
+            cv2.putText(frame, "Press SPACE to start capturing (Q to quit)",
+                        (20, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
         cv2.imshow(title, frame)
 
-        # Key controls
         key = cv2.waitKey(1) & 0xFF
-        if key in (ord('q'), ord('Q')):
+        if key == ord(' '):
+            started = True
+        elif key in (ord('q'), ord('Q')):
             break
         if saved >= 10:
             break

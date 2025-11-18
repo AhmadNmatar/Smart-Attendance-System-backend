@@ -6,11 +6,10 @@ from app.config.dbsetup import engine
 from app.routers.admin_router import admin_router
 from app.routers.person_router import person_router
 from app.routers.status_router import status_router
-from app.routers.face_router import router as face_router
-from app.routers.attendance_router import attendance_router
+from app.routers.attendance_router import router as attendance_router
 from app.services.camera_servic import Camera
 from app.services.face_service import InsightFaceEmbedder
-from app.routers import face_router as face_module
+from app.routers import attendance_router as attendance_module
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -19,8 +18,8 @@ async def lifespan(app: FastAPI):
     # DB
     SQLModel.metadata.create_all(engine)
     # Vision init
-    face_module.camera = Camera(index=0)
-    face_module.embedder = InsightFaceEmbedder()
+    attendance_module.camera = Camera(index=0)
+    attendance_module.embedder = InsightFaceEmbedder()
     try:
         yield
     except asyncio.CancelledError:
@@ -28,8 +27,8 @@ async def lifespan(app: FastAPI):
         pass
     finally:
          #cleanup
-        if face_module.camera:
-            face_module.camera.release()
+        if attendance_module.camera:
+            attendance_module.camera.release()
        #pass
 
 
@@ -48,5 +47,4 @@ app.add_middleware(
 app.include_router(person_router)
 app.include_router(status_router)
 app.include_router(admin_router)
-app.include_router(face_router)
 app.include_router(attendance_router)
