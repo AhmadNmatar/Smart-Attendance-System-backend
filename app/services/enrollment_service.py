@@ -62,14 +62,9 @@ def main(out_dir: str, cam_index: int = 0, timeout_ms: int = 15000):
     cv2.destroyAllWindows()
 
     if saved == 0:
-        # no frames saved
         sys.exit(3)
 
 if __name__ == "__main__":
-    # Usage: python -m app.tools.gui_capture_once /tmp/enroll_images [cam_index] [timeout_ms]
-    if len(sys.argv) < 2:
-        print("Usage: python -m app.tools.gui_capture_once /output/folder [cam_index] [timeout_ms]", file=sys.stderr)
-        sys.exit(1)
     out_dir = sys.argv[1]
     cam_index = int(sys.argv[2]) if len(sys.argv) >= 3 else 0
     timeout_ms = int(sys.argv[3]) if len(sys.argv) >= 4 else 15000
