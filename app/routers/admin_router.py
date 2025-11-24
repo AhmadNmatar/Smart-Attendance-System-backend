@@ -38,5 +38,4 @@ def login(session: SessionDep, form_data: Annotated[OAuth2PasswordRequestForm, D
     access_token = create_access_token(
         data={"sub": admin.email}, expires_delta=access_token_expires
     )
-    print(access_token)
     return TokenResponse(access_token=access_token, token_type="bearer", admin=admin)

@@ -1,10 +1,7 @@
-from fastapi import APIRouter, HTTPException, Depends, Query, UploadFile, File, Form, WebSocket, WebSocketDisconnect, Request, status
+from fastapi import APIRouter, HTTPException, Depends, Request, status
 from pydantic import BaseModel
-from typing import Optional, List, Tuple, Annotated
-import cv2, time, subprocess, sys, asyncio, numpy as np, json, base64, os
-from datetime import date, datetime
-from sqlmodel import Session, select
-from app.services.camera_servic import Camera
+from typing import Optional, List, Annotated
+import cv2, subprocess, sys, numpy as np, os
 from app.services.face_service import InsightFaceEmbedder, calculate_embeddings_avg, cosine_similarity
 from app.config.dbsetup import engine
 from app.models.person import PersonCreate
@@ -29,7 +26,6 @@ current_admin_dep = Annotated[Administrator, Depends(get_current_admin)]
 router = APIRouter(prefix="/attendance", tags=["attendance"])
 
 # --- app-scoped singletons (set on startup in main.py) ---
-camera: Optional[Camera] = None
 embedder: Optional[InsightFaceEmbedder] = None
 
 
@@ -59,7 +55,7 @@ def fetch_all_attendances(session : SessionDep, current_user: current_admin_dep)
 
 
 @router.post("/enroll")
-def enroll_face(req: EnrollReq, session: SessionDep):
+def enroll_face(req: EnrollReq, session: SessionDep, current_user: current_admin_dep):
     global embedder
     print(req.image_path)
     emb = embedder.get_face_embedding_image(req.image_path)
@@ -87,7 +83,7 @@ def enroll_face(req: EnrollReq, session: SessionDep):
     }
 
 @router.post("/recognize_user")
-def recognize_user(req : RecognizeReq, session: SessionDep):
+def recognize_user(req : RecognizeReq, session: SessionDep, current_user: current_admin_dep):
     global embedder
 
     emb = embedder.get_face_embedding_image(req.image_path)
@@ -115,7 +111,7 @@ def recognize_user(req : RecognizeReq, session: SessionDep):
 
 
 @router.post("/enroll_images")
-def enroll_faces(req: EnrollReq, session: SessionDep):
+def enroll_faces(req: EnrollReq, session: SessionDep, current_user: current_admin_dep):
     global embedder
     images = req.image_path
     embs = []
@@ -145,75 +141,8 @@ def enroll_faces(req: EnrollReq, session: SessionDep):
     }
 
 
-@router.websocket("/recognize_realtime")
-async def recognize_realtime(websocket: WebSocket, session: SessionDep): 
-    global embedder, camera
-    await websocket.accept() 
-    try: 
-        if camera is None or embedder is None: 
-            await websocket.send_json({"error": "Vision pipeline not ready"}) 
-            await websocket.close() 
-            return 
-
-        embeddings = get_all(session) 
-        if not embeddings: 
-            await websocket.send_json({"error": "No embeddings found"}) 
-            await websocket.close() 
-            return 
-        while True: 
-            frame = camera.get_frame() 
-            if frame is None: 
-                await asyncio.sleep(0.1) # Wait a bit if no frame continue 
-
-            # Detect faces
-            #rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            faces = embedder.app.get(frame)
-            if len(faces) < 1:
-                websocket.send_json({"no face detected"})
-                await asyncio.sleep(0.1)
-                continue
-            if len(faces) > 1:
-                print("Warning: Multiple faces detected. Using first detected face")
-
-            results = embedder.find_match(faces[0], embeddings, session, 0.65)
-            created =[]
-            if not results[0]["matched"]:
-                 websocket.send_json({ "faces": results, "attendance": [] })
-                 continue
-
-            person_id = results[0]['person_id']
-            if person_id not in seen_today:      
-                added = add_attendance(
-                    AttendanceCreate(person_id=results[0]["person_id"], status_id=1),
-                    session,
-                )
-                seen_today.add(person_id)
-                created.append(added)
-                await websocket.send_json({ "faces": results})
-
-            print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}}}")
-
-            await websocket.send_json({ "faces": results, "attendance":[]})
-            await asyncio.sleep(0.1) 
-    except WebSocketDisconnect: 
-        pass 
-    except Exception as e: 
-        try: 
-            await websocket.send_json({"error": str(e)}) 
-        except: 
-            pass 
-        finally: 
-            try: 
-                await websocket.close() 
-            except: 
-                pass
-
-
-############## enroll via camera ##########
-
-
 @router.post("/enroll_camera")
-def enroll_camera(req : EnrollReq, session: SessionDep):
+def enroll_camera(req : EnrollReq, session: SessionDep, current_user: current_admin_dep):
     global embedder
     if embedder is None:
         raise HTTPException(status_code=503, detail="Vision pipeline not ready")
@@ -221,7 +150,7 @@ def enroll_camera(req : EnrollReq, session: SessionDep):
     out_dir = Path(os.getcwd()) / "enroll_images"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    cmd = [sys.executable, "-m", "app.services.enrollment_camera", str(out_dir), "0", "15000"]
+    cmd = [sys.executable, "-m", "app.services.enrollment_service", str(out_dir), "0", "15000"]
     try:
        subprocess.run(cmd, capture_output=True, text=True)
     except Exception as e:
@@ -251,7 +180,6 @@ def enroll_camera(req : EnrollReq, session: SessionDep):
     if person is None:
         raise HTTPException(status_code=500, detail="Failed to create person")
 
-    print(person.person_id)
     for p in image_paths: 
         try: p.unlink()
         except: pass
@@ -264,7 +192,7 @@ def enroll_camera(req : EnrollReq, session: SessionDep):
 
 
 @router.post("/take_attendance")
-async def take_attendace(request: Request, session: SessionDep ):
+async def take_attendace(request: Request, session: SessionDep , current_user: current_admin_dep):
     global embedder
     if embedder is None:
         raise HTTPException(
@@ -296,17 +224,19 @@ async def take_attendace(request: Request, session: SessionDep ):
     if not embeddings:
         return {"No embeddings found in db"}
 
-    # ---- 5. Detect faces ----
-    faces = embedder.app.get(frame)  # same as you do in websocket
+    faces = embedder.app.get(frame)
+
+
     if len(faces) < 1:
-       return {"faces": [], "attendance": []}
+       return {" no faces ": {}, "attendance": {}}
     if len(faces) > 1:
         print("Warning: Multiple faces detected. Using first detected face")
-        
+    
 
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=0.65)
     
     created ={}
+
     if not results[0]["matched"]:
             return { "faces": results, "attendance": [] }
     person_id = results[0]["person_id"]
@@ -318,6 +248,6 @@ async def take_attendace(request: Request, session: SessionDep ):
         seen_today.add(person_id)
         return { "faces": results, "attendance": created, "created": created}
 
-    print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}}}")
+    print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}, age : {faces[0]['age']}, gender : {faces[0]["gender"]} }} ")
 
     return { "faces": results, "attendance": {}, "created": created}

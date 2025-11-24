@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from typing import List, Tuple, Optional, Dict
 from insightface.app import FaceAnalysis
 from app.cruds.person_crud import get_person_by_embedding_id
 
@@ -72,9 +71,10 @@ class InsightFaceEmbedder:
 def calculate_embeddings_avg(embs: list[np.ndarray]) -> np.ndarray:
     if not embs:
         raise ValueError("The list of embeddings is empty.")
-    emb_matrix = np.vstack(embs)
-    avg_emb = np.mean(emb_matrix, axis=0)
+    normalized_embs = [e / (np.linalg.norm(e) + 1e-8) for e in embs]
+    avg_emb = np.mean(np.vstack(normalized_embs), axis=0)
     avg_emb = avg_emb / (np.linalg.norm(avg_emb) + 1e-8)
+
     return avg_emb
 
 

@@ -7,7 +7,6 @@ from app.routers.admin_router import admin_router
 from app.routers.person_router import person_router
 from app.routers.status_router import status_router
 from app.routers.attendance_router import router as attendance_router
-from app.services.camera_servic import Camera
 from app.services.face_service import InsightFaceEmbedder
 from app.routers import attendance_router as attendance_module
 from fastapi.middleware.cors import CORSMiddleware
@@ -15,21 +14,14 @@ from fastapi.middleware.cors import CORSMiddleware
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # DB
     SQLModel.metadata.create_all(engine)
-    # Vision init
-    attendance_module.camera = Camera(index=0)
     attendance_module.embedder = InsightFaceEmbedder()
     try:
         yield
     except asyncio.CancelledError:
-        # Suppress CancelledError during shutdown
         pass
     finally:
-         #cleanup
-        if attendance_module.camera:
-            attendance_module.camera.release()
-       #pass
+       pass
 
 
 app = FastAPI(title="Smart Attendance System API", lifespan=lifespan)
