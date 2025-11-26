@@ -2,13 +2,21 @@ import cv2
 import numpy as np
 from insightface.app import FaceAnalysis
 from app.cruds.person_crud import get_person_by_embedding_id
-
+import onnxruntime as ort
 
 model_name = "buffalo_l"
 class InsightFaceEmbedder:
     def __init__(self):
+        available = ort.get_available_providers()
+        print("Providers available:", available)
+
+        providers = ['CPUExecutionProvider']  # default
+
+        if 'CoreMLExecutionProvider' in available:
+            providers = ['CoreMLExecutionProvider']
+
         self.app = FaceAnalysis(name=model_name, providers=['CPUExecutionProvider'])
-        ctx_id = 1
+        ctx_id = 0 # 0 for GPU
         self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
 
     def get_face_embedding_image(self, image_path : str):
