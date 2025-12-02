@@ -1,0 +1,561 @@
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0109 seconds
+Time to get faces: 1.0752 seconds
+Time to find match: 0.0031 seconds
+CPU usage start: 23.5%
+Memory usage start: 3982.57 MB
+CPU usage end: 39.7%
+Memory usage end: 4115.91 MB
+Match results: [{'bbox': [-73, 23, 132, 268], 'matched': False, 'name': 'Unkown', 'score': 0.6126276850700378}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.7282 seconds
+Time to find match: 0.0080 seconds
+CPU usage start: 85.7%
+Memory usage start: 4117.50 MB
+CPU usage end: 46.8%
+Memory usage end: 4117.50 MB
+Match results: [{'bbox': [-66, 27, 133, 257], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.6989543437957764}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0125 seconds
+Time to get faces: 0.7670 seconds
+Time to find match: 0.0024 seconds
+CPU usage start: 0.0%
+Memory usage start: 4117.50 MB
+CPU usage end: 68.3%
+Memory usage end: 4167.07 MB
+Match results: [{'bbox': [-79, 11, 105, 262], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.6561885476112366}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0151 seconds
+Time to get faces: 0.8449 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4167.10 MB
+CPU usage end: 72.3%
+Memory usage end: 4171.55 MB
+Match results: [{'bbox': [-68, 21, 131, 259], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7056353092193604}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0109 seconds
+Time to get faces: 0.5655 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 66.7%
+Memory usage start: 4171.49 MB
+CPU usage end: 69.4%
+Memory usage end: 4165.57 MB
+Match results: [{'bbox': [540, 77, 690, 262], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.7580766081809998}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0064 seconds
+Time to get faces: 0.6438 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 80.0%
+Memory usage start: 4166.45 MB
+CPU usage end: 72.7%
+Memory usage end: 4168.50 MB
+Match results: [{'bbox': [506, 71, 642, 256], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8547320365905762}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0097 seconds
+Time to get faces: 0.5644 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 62.5%
+Memory usage start: 4167.11 MB
+CPU usage end: 75.8%
+Memory usage end: 4168.10 MB
+Match results: [{'bbox': [414, 93, 544, 261], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8708887100219727}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0043 seconds
+Time to get faces: 0.5560 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4167.92 MB
+CPU usage end: 70.9%
+Memory usage end: 4167.94 MB
+Match results: [{'bbox': [452, 83, 583, 256], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8519489765167236}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0069 seconds
+Time to get faces: 0.7173 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 83.3%
+Memory usage start: 4185.51 MB
+CPU usage end: 39.3%
+Memory usage end: 4185.97 MB
+Match results: [{'bbox': [3, 89, 192, 316], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7360904216766357}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0036 seconds
+Time to get faces: 0.7135 seconds
+Time to find match: 0.0026 seconds
+CPU usage start: 0.0%
+Memory usage start: 4185.87 MB
+CPU usage end: 37.7%
+Memory usage end: 4185.90 MB
+Match results: [{'bbox': [21, 99, 205, 313], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7775946855545044}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0086 seconds
+Time to get faces: 0.7189 seconds
+Time to find match: 0.0004 seconds
+CPU usage start: 0.0%
+Memory usage start: 4185.90 MB
+CPU usage end: 37.2%
+Memory usage end: 4186.09 MB
+Match results: [{'bbox': [-67, 70, 100, 298], 'matched': False, 'name': 'Unkown', 'score': 0.6164997816085815}]
+
+
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0032 seconds
+Time to get faces: 0.4611 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 69.6%
+Memory usage start: 4135.55 MB
+CPU usage end: 20.7%
+Memory usage end: 4135.89 MB
+Match results: [{'bbox': [406, 73, 558, 265], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8189899921417236}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.4433 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 18.4%
+Memory usage start: 4087.18 MB
+CPU usage end: 30.7%
+Memory usage end: 4166.39 MB
+Match results: [{'bbox': [398, 43, 531, 239], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7461490035057068}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0064 seconds
+Time to get faces: 0.4567 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4166.33 MB
+CPU usage end: 56.9%
+Memory usage end: 4166.32 MB
+Match results: [{'bbox': [394, 44, 529, 244], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.764729380607605}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0044 seconds
+Time to get faces: 0.5178 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 71.4%
+Memory usage start: 4166.25 MB
+CPU usage end: 70.2%
+Memory usage end: 4165.42 MB
+Match results: [{'bbox': [409, 39, 544, 236], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7254387736320496}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0055 seconds
+Time to get faces: 0.5603 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4165.52 MB
+CPU usage end: 76.1%
+Memory usage end: 4162.77 MB
+Match results: [{'bbox': [393, 42, 526, 235], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7377579808235168}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0034 seconds
+Time to get faces: 0.5586 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 69.2%
+Memory usage start: 4163.74 MB
+CPU usage end: 76.5%
+Memory usage end: 4163.75 MB
+Match results: [{'bbox': [411, 38, 547, 233], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7432893514633179}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.8191 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 100.0%
+Memory usage start: 4163.62 MB
+CPU usage end: 79.0%
+Memory usage end: 4163.62 MB
+Match results: [{'bbox': [404, 41, 540, 242], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7205020189285278}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.8039 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 82.4%
+Memory usage start: 4163.62 MB
+CPU usage end: 79.6%
+Memory usage end: 4158.17 MB
+Match results: [{'bbox': [404, 41, 540, 243], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7340508699417114}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0076 seconds
+Time to get faces: 0.8640 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 77.8%
+Memory usage start: 4157.41 MB
+CPU usage end: 74.7%
+Memory usage end: 4177.58 MB
+Match results: [{'bbox': [400, 41, 534, 239], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7250328063964844}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0018 seconds
+Time to get faces: 0.5868 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 100.0%
+Memory usage start: 4177.58 MB
+CPU usage end: 74.4%
+Memory usage end: 4176.03 MB
+Match results: [{'bbox': [405, 37, 540, 232], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7348665595054626}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0058 seconds
+Time to get faces: 0.5763 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 83.3%
+Memory usage start: 4175.95 MB
+CPU usage end: 75.9%
+Memory usage end: 4175.95 MB
+Match results: [{'bbox': [402, 42, 537, 240], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7497424483299255}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0026 seconds
+Time to get faces: 0.5208 seconds
+Time to find match: 0.0064 seconds
+CPU usage start: 17.5%
+Memory usage start: 3388.19 MB
+CPU usage end: 39.9%
+Memory usage end: 3583.46 MB
+Match results: [{'bbox': [377, 128, 498, 294], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8702669143676758}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0016 seconds
+Time to get faces: 0.5898 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 36.6%
+Memory usage start: 3589.51 MB
+CPU usage end: 59.1%
+Memory usage end: 3599.62 MB
+Match results: [{'bbox': [390, 128, 524, 308], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8887011408805847}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0064 seconds
+Time to get faces: 0.6449 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 79.5%
+Memory usage start: 3602.39 MB
+CPU usage end: 83.5%
+Memory usage end: 3605.01 MB
+Match results: [{'bbox': [323, 133, 454, 310], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.7450147271156311}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.5544 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 74.8%
+Memory usage start: 3605.93 MB
+CPU usage end: 77.7%
+Memory usage end: 3606.92 MB
+Match results: [{'bbox': [312, 126, 437, 300], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8089104294776917}]
+
+CoreMLExecutionProvider
+
+
+Threshold: 0.65
+Time to convert to image: 0.0040 seconds
+Time to get faces: 0.5222 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 68.0%
+Memory usage start: 3606.98 MB
+CPU usage end: 72.2%
+Memory usage end: 3607.70 MB
+Match results: [{'bbox': [331, 119, 441, 269], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8540750741958618}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.5212 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 58.8%
+Memory usage start: 3608.47 MB
+CPU usage end: 64.2%
+Memory usage end: 3608.93 MB
+Match results: [{'bbox': [316, 125, 429, 282], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8589686751365662}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.5081 seconds
+Time to find match: 0.0003 seconds
+CPU usage start: 0.0%
+Memory usage start: 3609.25 MB
+CPU usage end: 62.9%
+Memory usage end: 3609.32 MB
+Match results: [{'bbox': [106, -10, 241, 162], 'matched': False, 'name': 'Unkown', 'score': 0.35319656133651733}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.5400 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 39.2%
+Memory usage start: 3627.63 MB
+CPU usage end: 55.6%
+Memory usage end: 3629.96 MB
+Match results: [{'bbox': [342, 103, 466, 285], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7755924463272095}]
+
+
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0016 seconds
+Time to get faces: 0.4574 seconds
+Time to find match: 0.0044 seconds
+CPU usage start: 42.8%
+Memory usage start: 3633.99 MB
+CPU usage end: 36.6%
+Memory usage end: 3634.55 MB
+Match results: [{'bbox': [200, 19, 336, 213], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8233134746551514}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.4797 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 22.8%
+Memory usage start: 3636.28 MB
+CPU usage end: 61.8%
+Memory usage end: 3638.25 MB
+Match results: [{'bbox': [194, 34, 327, 213], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8419226408004761}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5302 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 53.7%
+Memory usage start: 3641.27 MB
+CPU usage end: 69.4%
+Memory usage end: 3643.88 MB
+Match results: [{'bbox': [198, 50, 327, 211], 'matched': True, 'person_id': 11, 'first_name': 'Mohammad ', 'last_name': 'Al Sabbagh', 'score': 0.8104296326637268}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.7788 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 55.6%
+Memory usage start: 3711.20 MB
+CPU usage end: 62.1%
+Memory usage end: 3787.56 MB
+Match results: [{'bbox': [320, 148, 431, 297], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7981102466583252}]
+
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5198 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 58.8%
+Memory usage start: 3750.82 MB
+CPU usage end: 64.7%
+Memory usage end: 3745.01 MB
+Match results: [{'bbox': [102, -10, 178, 91], 'matched': True, 'person_id': 8, 'first_name': 'Samer', 'last_name': 'Hefnawe', 'score': 0.6685009002685547}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0038 seconds
+Time to get faces: 0.5135 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 57.3%
+Memory usage start: 3745.93 MB
+CPU usage end: 65.4%
+Memory usage end: 3739.21 MB
+Match results: [{'bbox': [298, 108, 410, 263], 'matched': True, 'person_id': 8, 'first_name': 'Samer', 'last_name': 'Hefnawe', 'score': 0.6607743501663208}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5087 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 50.5%
+Memory usage start: 3739.93 MB
+CPU usage end: 58.5%
+Memory usage end: 3739.89 MB
+Match results: [{'bbox': [311, 137, 392, 247], 'matched': True, 'person_id': 8, 'first_name': 'Samer', 'last_name': 'Hefnawe', 'score': 0.7004506587982178}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.6675 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 57.0%
+Memory usage start: 3743.79 MB
+CPU usage end: 73.3%
+Memory usage end: 3740.62 MB
+Match results: [{'bbox': [310, 143, 390, 252], 'matched': True, 'person_id': 8, 'first_name': 'Samer', 'last_name': 'Hefnawe', 'score': 0.6904431581497192}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.4461 seconds
+Time to find match: 0.0004 seconds
+CPU usage start: 27.1%
+Memory usage start: 3741.04 MB
+CPU usage end: 41.7%
+Memory usage end: 3741.53 MB
+Match results: [{'bbox': [132, -52, 224, 76], 'matched': False, 'name': 'Unkown', 'score': 0.23671463131904602}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.6099 seconds
+Time to find match: 0.0023 seconds
+CPU usage start: 34.0%
+Memory usage start: 3737.02 MB
+CPU usage end: 26.2%
+Memory usage end: 3736.98 MB
+Match results: [{'bbox': [279, 84, 339, 162], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7145090699195862}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0014 seconds
+Time to get faces: 0.6080 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 0.0%
+Memory usage start: 3737.16 MB
+CPU usage end: 24.4%
+Memory usage end: 3737.07 MB
+Match results: [{'bbox': [277, 84, 339, 161], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7151284217834473}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0015 seconds
+Time to get faces: 0.6013 seconds
+Time to find match: 0.0024 seconds
+CPU usage start: 21.9%
+Memory usage start: 3737.28 MB
+CPU usage end: 25.6%
+Memory usage end: 3737.59 MB
+Match results: [{'bbox': [274, 82, 335, 161], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7198466658592224}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0016 seconds
+Time to get faces: 0.6042 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 21.9%
+Memory usage start: 3737.63 MB
+CPU usage end: 25.7%
+Memory usage end: 3736.46 MB
+Match results: [{'bbox': [275, 79, 338, 159], 'matched': True, 'person_id': 10, 'first_name': 'AHMAD', 'last_name': 'MATAR', 'score': 0.7025917768478394}]
+
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0016 seconds
+Time to get faces: 0.4401 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 22.4%
+Memory usage start: 3737.89 MB
+CPU usage end: 24.9%
+Memory usage end: 3736.71 MB
+Match results: [{'bbox': [436, 122, 487, 192], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.6802143454551697}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0014 seconds
+Time to get faces: 0.4521 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 18.3%
+Memory usage start: 3736.40 MB
+CPU usage end: 27.3%
+Memory usage end: 3736.68 MB
+Match results: [{'bbox': [435, 121, 485, 192], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.7190320491790771}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.4504 seconds
+Time to find match: 0.0027 seconds
+CPU usage start: 27.1%
+Memory usage start: 3736.70 MB
+CPU usage end: 30.9%
+Memory usage end: 3736.66 MB
+Match results: [{'bbox': [432, 122, 483, 193], 'matched': True, 'person_id': 9, 'first_name': 'Mazen', 'last_name': 'Soudi', 'score': 0.6964243054389954}]
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0015 seconds
+Time to get faces: 0.4488 seconds
+Time to find match: 0.0027 seconds
+CPU usage start: 23.7%
+Memory usage start: 3734.38 MB
+CPU usage end: 26.1%
+Memory usage end: 3732.90 MB
+Match results: [{'bbox': [289, 57, 344, 134], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.7942730784416199}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.4655 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 39.5%
+Memory usage start: 3733.88 MB
+CPU usage end: 42.2%
+Memory usage end: 3733.04 MB
+Match results: [{'bbox': [294, 57, 348, 133], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.8231998682022095}]
+
+
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0018 seconds
+Time to get faces: 0.4448 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 22.3%
+Memory usage start: 3737.12 MB
+CPU usage end: 26.8%
+Memory usage end: 3727.98 MB
+Match results: [{'bbox': [402, -35, 476, 67], 'matched': True, 'person_id': 12, 'first_name': 'Nour', 'last_name': 'Khabbaz', 'score': 0.6778219938278198}]
+

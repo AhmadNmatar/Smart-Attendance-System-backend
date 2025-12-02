@@ -213,7 +213,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Unable to read request body",
         )
-
+    
     nparr = np.frombuffer(raw_bytes, np.uint8)
     frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     if frame is None:
@@ -224,7 +224,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     time_to_image = time.time() - start_time
 
     
-
+    THRESHOLD = 0.65
     start_time = time.time()
     embeddings = get_all(session)
     if not embeddings:
@@ -235,17 +235,20 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
 
     start_time = time.time()
     if len(faces) < 1:
+        print("no face detected")
         return {"no faces": {}, "attendance": {}}
     if len(faces) > 1:
         print("Warning: Multiple faces detected. Using first detected face")
 
-    results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=0.65)
+    results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
     time_to_match = time.time() - start_time
 
     cpu_usage_end = psutil.cpu_percent()
     memory_usage_end = psutil.virtual_memory().used
 
-    with open("attendance_timing_results.txt", "a") as f:
+    with open("Zain.txt", "a") as f:
+        f.write(f"CoreMLExecutionProvider\n")
+        f.write(f"Threshold: {THRESHOLD}\n")
         f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
         f.write(f"Time to get faces: {time_to_faces:.4f} seconds\n")
         f.write(f"Time to find match: {time_to_match:.4f} seconds\n")
@@ -258,6 +261,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     created = {}
 
     if not results[0]["matched"]:
+        print(f"{{score: {results[0]['score']},\n name: {results[0]['name']},\n gissed : {results[0]['gussed']} ,\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
         return {"faces": results, "attendance": []}
     
     person_id = results[0]["person_id"]
@@ -267,8 +271,10 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
             session,
         )
         seen_today.add(person_id)
+        print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
         return {"faces": results, "attendance": created, "created": created}
 
-    print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}, age: {faces[0]['age']}, gender: {faces[0]['gender']}}}")
+    print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}") 
+        
 
     return {"faces": results, "attendance": {}, "created": created}
