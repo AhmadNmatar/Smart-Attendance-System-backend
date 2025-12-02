@@ -246,7 +246,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     cpu_usage_end = psutil.cpu_percent()
     memory_usage_end = psutil.virtual_memory().used
 
-    with open("Sakina.txt", "a") as f:
+    with open("Mazen.txt", "a") as f:
         f.write(f"CoreMLExecutionProvider\n")
         f.write(f"Threshold: {THRESHOLD}\n")
         f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
