@@ -246,8 +246,7 @@ async def take_attendace(request: Request, session: SessionDep , current_user: c
             session,
         )
         seen_today.add(person_id)
-        return { "faces": results, "attendance": created, "created": created}
+        return {"attendance": created}
 
-    print(f"{{score: {results[0]['score']}, name: {results[0]['first_name']}, age : {faces[0]['age']}, gender : {faces[0]["gender"]} }} ")
 
-    return { "faces": results, "attendance": {}, "created": created}
+    return { "attendance": {}}
