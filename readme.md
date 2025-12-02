@@ -11,5 +11,10 @@
    ```
 3. Run the app:
    ```bash
-   fastapi dev app/main.py
+   fastapi run app/main.py
    ```
+
+After running the app, FastAPI automatically generates interactive documentation where you can test all endpoints and see required data.
+
+Swagger UI:
+👉 http://0.0.0.0:8000/docs
