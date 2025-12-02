@@ -1,0 +1,2418 @@
+
+======== frontal normal light ========================
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0049 seconds
+Time to get faces: 0.9217 seconds
+Time to find match: 0.0070 seconds
+CPU usage start: 31.2%
+Memory usage start: 4415.81 MB
+CPU usage end: 41.5%
+Memory usage end: 4541.05 MB
+Match results: [{'bbox': [80, 158, 207, 328], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.812545895576477}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.5388 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 83.8%
+Memory usage start: 4545.89 MB
+CPU usage end: 49.3%
+Memory usage end: 4567.90 MB
+Match results: [{'bbox': [81, 155, 208, 325], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8242283463478088}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0031 seconds
+Time to get faces: 0.6278 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 66.7%
+Memory usage start: 4568.56 MB
+CPU usage end: 72.9%
+Memory usage end: 4591.61 MB
+Match results: [{'bbox': [85, 151, 210, 315], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8515225052833557}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6735 seconds
+Time to find match: 0.0037 seconds
+CPU usage start: 100.0%
+Memory usage start: 4591.62 MB
+CPU usage end: 73.5%
+Memory usage end: 4597.37 MB
+Match results: [{'bbox': [100, 130, 219, 290], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8272777795791626}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0035 seconds
+Time to get faces: 0.7235 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 90.0%
+Memory usage start: 4597.37 MB
+CPU usage end: 80.3%
+Memory usage end: 4604.21 MB
+Match results: [{'bbox': [124, 116, 241, 273], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8808605074882507}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.6264 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 100.0%
+Memory usage start: 4604.23 MB
+CPU usage end: 81.9%
+Memory usage end: 4603.38 MB
+Match results: [{'bbox': [138, 116, 253, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8457067012786865}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0052 seconds
+Time to get faces: 0.6496 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4603.53 MB
+CPU usage end: 78.8%
+Memory usage end: 4610.01 MB
+Match results: [{'bbox': [144, 112, 258, 268], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.844699501991272}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.5560 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 0.0%
+Memory usage start: 4609.96 MB
+CPU usage end: 78.7%
+Memory usage end: 4609.96 MB
+Match results: [{'bbox': [146, 116, 258, 268], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8585600852966309}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0103 seconds
+Time to get faces: 0.5959 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 60.0%
+Memory usage start: 4609.96 MB
+CPU usage end: 76.4%
+Memory usage end: 4606.85 MB
+Match results: [{'bbox': [138, 105, 258, 268], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8655370473861694}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.6049 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4606.86 MB
+CPU usage end: 0.0%
+Memory usage end: 4599.47 MB
+Match results: [{'bbox': [134, 91, 258, 281], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7261298894882202}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.7053 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 0.0%
+Memory usage start: 4599.51 MB
+CPU usage end: 73.8%
+Memory usage end: 4603.30 MB
+Match results: [{'bbox': [135, 101, 260, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8624658584594727}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.5971 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 75.0%
+Memory usage start: 4603.93 MB
+CPU usage end: 81.6%
+Memory usage end: 4614.39 MB
+Match results: [{'bbox': [133, 99, 260, 274], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8582653403282166}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0049 seconds
+Time to get faces: 0.7810 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 76.9%
+Memory usage start: 4611.32 MB
+CPU usage end: 80.4%
+Memory usage end: 4624.15 MB
+Match results: [{'bbox': [147, 105, 262, 280], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7360714077949524}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.5018 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 100.0%
+Memory usage start: 4624.20 MB
+CPU usage end: 54.2%
+Memory usage end: 4623.27 MB
+Match results: [{'bbox': [157, 118, 265, 282], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7205176949501038}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0205 seconds
+Time to get faces: 0.5072 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4623.28 MB
+CPU usage end: 60.6%
+Memory usage end: 4625.20 MB
+Match results: [{'bbox': [158, 132, 263, 282], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7797695994377136}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.4584 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4625.21 MB
+CPU usage end: 48.4%
+Memory usage end: 4627.14 MB
+Match results: [{'bbox': [161, 127, 266, 278], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7796652317047119}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0015 seconds
+Time to get faces: 0.7168 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4627.02 MB
+CPU usage end: 69.1%
+Memory usage end: 4648.14 MB
+Match results: [{'bbox': [162, 133, 266, 285], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7736461162567139}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.4728 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 100.0%
+Memory usage start: 4648.22 MB
+CPU usage end: 49.7%
+Memory usage end: 4663.51 MB
+Match results: [{'bbox': [163, 128, 268, 285], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8070717453956604}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0048 seconds
+Time to get faces: 0.4154 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 0.0%
+Memory usage start: 4663.48 MB
+CPU usage end: 0.0%
+Memory usage end: 4656.84 MB
+Match results: [{'bbox': [161, 127, 269, 283], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8027656674385071}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.4269 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 0.0%
+Memory usage start: 4656.76 MB
+CPU usage end: 27.7%
+Memory usage end: 4658.09 MB
+Match results: [{'bbox': [159, 129, 265, 284], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8160861730575562}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.4276 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 100.0%
+Memory usage start: 4657.95 MB
+CPU usage end: 39.5%
+Memory usage end: 4660.66 MB
+Match results: [{'bbox': [105, 109, 238, 288], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8283371925354004}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.4829 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4660.66 MB
+CPU usage end: 64.4%
+Memory usage end: 4660.66 MB
+Match results: [{'bbox': [145, 129, 254, 286], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7864693999290466}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.5197 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 0.0%
+Memory usage start: 4660.66 MB
+CPU usage end: 55.2%
+Memory usage end: 4663.11 MB
+Match results: [{'bbox': [116, 112, 242, 281], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8188810348510742}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0014 seconds
+Time to get faces: 0.5504 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4663.11 MB
+CPU usage end: 0.0%
+Memory usage end: 4663.11 MB
+Match results: [{'bbox': [133, 122, 250, 279], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8332828879356384}]
+
+=================== distance 150 cm ================CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0015 seconds
+Time to get faces: 0.4842 seconds
+Time to find match: 0.0031 seconds
+CPU usage start: 35.1%
+Memory usage start: 4808.31 MB
+CPU usage end: 30.6%
+Memory usage end: 4884.27 MB
+Match results: [{'bbox': [262, 212, 330, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8584496974945068}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0029 seconds
+Time to get faces: 0.5287 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 80.0%
+Memory usage start: 4884.18 MB
+CPU usage end: 57.9%
+Memory usage end: 4900.17 MB
+Match results: [{'bbox': [259, 211, 327, 303], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8398033976554871}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0031 seconds
+Time to get faces: 0.6611 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 100.0%
+Memory usage start: 4900.00 MB
+CPU usage end: 80.9%
+Memory usage end: 4900.00 MB
+Match results: [{'bbox': [258, 211, 328, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8492158651351929}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0034 seconds
+Time to get faces: 0.5608 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 78.6%
+Memory usage start: 4900.00 MB
+CPU usage end: 63.1%
+Memory usage end: 4896.80 MB
+Match results: [{'bbox': [261, 211, 330, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8540677428245544}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.6443 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4896.76 MB
+CPU usage end: 78.5%
+Memory usage end: 4890.43 MB
+Match results: [{'bbox': [262, 211, 331, 307], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8461354374885559}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0068 seconds
+Time to get faces: 0.7395 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 100.0%
+Memory usage start: 4890.49 MB
+CPU usage end: 75.9%
+Memory usage end: 4889.54 MB
+Match results: [{'bbox': [263, 212, 331, 307], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.854659378528595}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0029 seconds
+Time to get faces: 0.5469 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 0.0%
+Memory usage start: 4889.52 MB
+CPU usage end: 61.9%
+Memory usage end: 4889.52 MB
+Match results: [{'bbox': [258, 210, 326, 303], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8312369585037231}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6696 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 0.0%
+Memory usage start: 4889.52 MB
+CPU usage end: 74.3%
+Memory usage end: 4869.27 MB
+Match results: [{'bbox': [263, 212, 332, 307], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8413967490196228}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.5395 seconds
+Time to find match: 0.0035 seconds
+CPU usage start: 100.0%
+Memory usage start: 4868.21 MB
+CPU usage end: 59.5%
+Memory usage end: 4868.49 MB
+Match results: [{'bbox': [260, 211, 328, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8469614386558533}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.4940 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 88.9%
+Memory usage start: 4868.70 MB
+CPU usage end: 56.5%
+Memory usage end: 4863.36 MB
+Match results: [{'bbox': [253, 209, 320, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8517864942550659}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.5345 seconds
+Time to find match: 0.0026 seconds
+CPU usage start: 0.0%
+Memory usage start: 4863.32 MB
+CPU usage end: 68.4%
+Memory usage end: 4853.82 MB
+Match results: [{'bbox': [253, 209, 321, 301], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8488864302635193}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0041 seconds
+Time to get faces: 0.5525 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4853.87 MB
+CPU usage end: 72.9%
+Memory usage end: 4853.64 MB
+Match results: [{'bbox': [256, 208, 323, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8612216711044312}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0042 seconds
+Time to get faces: 0.5312 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4853.57 MB
+CPU usage end: 57.9%
+Memory usage end: 4855.64 MB
+Match results: [{'bbox': [254, 209, 321, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8539772033691406}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0051 seconds
+Time to get faces: 0.6130 seconds
+Time to find match: 0.0051 seconds
+CPU usage start: 66.7%
+Memory usage start: 4855.94 MB
+CPU usage end: 68.5%
+Memory usage end: 4853.36 MB
+Match results: [{'bbox': [254, 210, 321, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8588033318519592}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.5856 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 50.0%
+Memory usage start: 4853.32 MB
+CPU usage end: 0.0%
+Memory usage end: 4853.36 MB
+Match results: [{'bbox': [254, 210, 321, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8463003635406494}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.8044 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 0.0%
+Memory usage start: 4853.46 MB
+CPU usage end: 71.2%
+Memory usage end: 4852.66 MB
+Match results: [{'bbox': [252, 210, 321, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8357529044151306}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.5553 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 85.7%
+Memory usage start: 4853.59 MB
+CPU usage end: 69.7%
+Memory usage end: 4852.31 MB
+Match results: [{'bbox': [249, 208, 318, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8333882093429565}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.6153 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4852.17 MB
+CPU usage end: 78.5%
+Memory usage end: 4850.33 MB
+Match results: [{'bbox': [253, 211, 321, 302], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.86834317445755}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.6247 seconds
+Time to find match: 0.0027 seconds
+CPU usage start: 84.6%
+Memory usage start: 4851.37 MB
+CPU usage end: 75.5%
+Memory usage end: 4851.37 MB
+Match results: [{'bbox': [248, 209, 317, 301], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8369469046592712}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0046 seconds
+Time to get faces: 0.5900 seconds
+Time to find match: 0.0024 seconds
+CPU usage start: 0.0%
+Memory usage start: 4851.37 MB
+CPU usage end: 80.1%
+Memory usage end: 4847.82 MB
+Match results: [{'bbox': [245, 213, 313, 303], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.825441837310791}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.6051 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 100.0%
+Memory usage start: 4848.15 MB
+CPU usage end: 75.5%
+Memory usage end: 4846.50 MB
+Match results: [{'bbox': [243, 214, 313, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8353573083877563}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0046 seconds
+Time to get faces: 0.5124 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 75.0%
+Memory usage start: 4846.39 MB
+CPU usage end: 45.6%
+Memory usage end: 4847.02 MB
+Match results: [{'bbox': [243, 215, 313, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8431222438812256}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.5099 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4846.79 MB
+CPU usage end: 60.5%
+Memory usage end: 4846.66 MB
+Match results: [{'bbox': [243, 214, 313, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.845341145992279}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0052 seconds
+Time to get faces: 0.4975 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 0.0%
+Memory usage start: 4846.74 MB
+CPU usage end: 63.0%
+Memory usage end: 4845.87 MB
+Match results: [{'bbox': [244, 216, 313, 307], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8335785865783691}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5665 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 66.7%
+Memory usage start: 4845.84 MB
+CPU usage end: 0.0%
+Memory usage end: 4846.88 MB
+Match results: [{'bbox': [245, 214, 314, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8421777486801147}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0034 seconds
+Time to get faces: 0.5647 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4845.52 MB
+CPU usage end: 66.5%
+Memory usage end: 4840.39 MB
+Match results: [{'bbox': [245, 213, 315, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8449947237968445}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0100 seconds
+Time to get faces: 0.6310 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 66.7%
+Memory usage start: 4840.39 MB
+CPU usage end: 57.2%
+Memory usage end: 4841.38 MB
+Match results: [{'bbox': [246, 212, 316, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8458311557769775}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.6960 seconds
+Time to find match: 0.0329 seconds
+CPU usage start: 100.0%
+Memory usage start: 4841.36 MB
+CPU usage end: 71.7%
+Memory usage end: 4839.42 MB
+Match results: [{'bbox': [246, 213, 315, 305], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8459208011627197}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5808 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 72.0%
+Memory usage start: 4839.50 MB
+CPU usage end: 58.1%
+Memory usage end: 4838.61 MB
+Match results: [{'bbox': [246, 214, 315, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8517600893974304}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0060 seconds
+Time to get faces: 0.5702 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 0.0%
+Memory usage start: 4838.59 MB
+CPU usage end: 64.2%
+Memory usage end: 4837.75 MB
+Match results: [{'bbox': [246, 212, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8440148830413818}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.5094 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4837.80 MB
+CPU usage end: 51.7%
+Memory usage end: 4836.65 MB
+Match results: [{'bbox': [246, 213, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8438217639923096}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0038 seconds
+Time to get faces: 0.6272 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4837.64 MB
+CPU usage end: 80.2%
+Memory usage end: 4845.63 MB
+Match results: [{'bbox': [246, 213, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8531894087791443}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.5070 seconds
+Time to find match: 0.0094 seconds
+CPU usage start: 77.8%
+Memory usage start: 4845.86 MB
+CPU usage end: 61.4%
+Memory usage end: 4837.51 MB
+Match results: [{'bbox': [247, 213, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.835908830165863}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.8050 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 83.3%
+Memory usage start: 4839.58 MB
+CPU usage end: 80.2%
+Memory usage end: 4845.38 MB
+Match results: [{'bbox': [247, 213, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8398727774620056}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.7396 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 80.0%
+Memory usage start: 4845.62 MB
+CPU usage end: 74.9%
+Memory usage end: 4845.62 MB
+Match results: [{'bbox': [247, 214, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8278331160545349}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0043 seconds
+Time to get faces: 0.6719 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 100.0%
+Memory usage start: 4845.62 MB
+CPU usage end: 68.9%
+Memory usage end: 4837.94 MB
+Match results: [{'bbox': [247, 213, 316, 306], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8326817750930786}]
+
+================= different angle ==============================
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0029 seconds
+Time to get faces: 0.5156 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 24.7%
+Memory usage start: 4628.52 MB
+CPU usage end: 68.1%
+Memory usage end: 4705.95 MB
+Match results: [{'bbox': [196, 119, 309, 265], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8655499815940857}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5990 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 87.5%
+Memory usage start: 4705.95 MB
+CPU usage end: 86.4%
+Memory usage end: 4721.19 MB
+Match results: [{'bbox': [207, 121, 320, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8788893222808838}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0032 seconds
+Time to get faces: 0.8959 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4721.19 MB
+CPU usage end: 76.7%
+Memory usage end: 4723.04 MB
+Match results: [{'bbox': [205, 122, 316, 267], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.859090268611908}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.6092 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 85.7%
+Memory usage start: 4722.43 MB
+CPU usage end: 90.2%
+Memory usage end: 4722.07 MB
+Match results: [{'bbox': [202, 123, 318, 276], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.856646716594696}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6334 seconds
+Time to find match: 0.0066 seconds
+CPU usage start: 100.0%
+Memory usage start: 4722.04 MB
+CPU usage end: 0.0%
+Memory usage end: 4719.30 MB
+Match results: [{'bbox': [193, 128, 312, 279], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8627070784568787}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0045 seconds
+Time to get faces: 0.6190 seconds
+Time to find match: 0.0078 seconds
+CPU usage start: 0.0%
+Memory usage start: 4719.27 MB
+CPU usage end: 88.1%
+Memory usage end: 4718.44 MB
+Match results: [{'bbox': [205, 129, 321, 283], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8716024160385132}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0039 seconds
+Time to get faces: 0.5715 seconds
+Time to find match: 0.0023 seconds
+CPU usage start: 100.0%
+Memory usage start: 4718.46 MB
+CPU usage end: 0.0%
+Memory usage end: 4707.51 MB
+Match results: [{'bbox': [188, 125, 306, 274], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8513886332511902}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0042 seconds
+Time to get faces: 0.6158 seconds
+Time to find match: 0.0049 seconds
+CPU usage start: 0.0%
+Memory usage start: 4707.51 MB
+CPU usage end: 88.6%
+Memory usage end: 4705.49 MB
+Match results: [{'bbox': [181, 127, 294, 277], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8041860461235046}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.6338 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 84.6%
+Memory usage start: 4705.47 MB
+CPU usage end: 85.1%
+Memory usage end: 4705.47 MB
+Match results: [{'bbox': [182, 124, 297, 274], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8347761631011963}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0057 seconds
+Time to get faces: 0.5558 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 0.0%
+Memory usage start: 4705.47 MB
+CPU usage end: 71.5%
+Memory usage end: 4696.53 MB
+Match results: [{'bbox': [157, 127, 269, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6346354484558105}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.6345 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 100.0%
+Memory usage start: 4696.74 MB
+CPU usage end: 78.5%
+Memory usage end: 4696.10 MB
+Match results: [{'bbox': [180, 130, 296, 284], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8610451817512512}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0014 seconds
+Time to get faces: 0.5273 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4696.10 MB
+CPU usage end: 54.0%
+Memory usage end: 4692.74 MB
+Match results: [{'bbox': [189, 129, 302, 282], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8463724255561829}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.6267 seconds
+Time to find match: 0.0039 seconds
+CPU usage start: 100.0%
+Memory usage start: 4692.64 MB
+CPU usage end: 80.7%
+Memory usage end: 4692.82 MB
+Match results: [{'bbox': [198, 128, 311, 282], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8651047945022583}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0120 seconds
+Time to get faces: 0.6478 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 0.0%
+Memory usage start: 4692.81 MB
+CPU usage end: 65.8%
+Memory usage end: 4693.15 MB
+Match results: [{'bbox': [163, 127, 276, 279], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7373985648155212}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.6506 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4693.26 MB
+CPU usage end: 82.1%
+Memory usage end: 4695.30 MB
+Match results: [{'bbox': [171, 125, 285, 273], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.79439777135849}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0035 seconds
+Time to get faces: 0.5981 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 88.2%
+Memory usage start: 4693.73 MB
+CPU usage end: 78.7%
+Memory usage end: 4692.00 MB
+Match results: [{'bbox': [196, 124, 309, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8923068046569824}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.6270 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 0.0%
+Memory usage start: 4692.15 MB
+CPU usage end: 0.0%
+Memory usage end: 4690.90 MB
+Match results: [{'bbox': [194, 123, 309, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8647599220275879}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0018 seconds
+Time to get faces: 0.5313 seconds
+Time to find match: 0.0032 seconds
+CPU usage start: 0.0%
+Memory usage start: 4690.88 MB
+CPU usage end: 73.5%
+Memory usage end: 4688.51 MB
+Match results: [{'bbox': [205, 122, 320, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8518349528312683}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.5915 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4688.57 MB
+CPU usage end: 81.3%
+Memory usage end: 4688.43 MB
+Match results: [{'bbox': [194, 123, 306, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8834683895111084}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0099 seconds
+Time to get faces: 0.5009 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 85.7%
+Memory usage start: 4688.43 MB
+CPU usage end: 49.5%
+Memory usage end: 4688.36 MB
+Match results: [{'bbox': [198, 124, 311, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8510084748268127}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5880 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 100.0%
+Memory usage start: 4688.37 MB
+CPU usage end: 78.9%
+Memory usage end: 4688.84 MB
+Match results: [{'bbox': [207, 121, 323, 266], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8503351211547852}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.4904 seconds
+Time to find match: 0.0029 seconds
+CPU usage start: 75.0%
+Memory usage start: 4688.91 MB
+CPU usage end: 51.3%
+Memory usage end: 4689.38 MB
+Match results: [{'bbox': [206, 122, 322, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8438712358474731}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0059 seconds
+Time to get faces: 0.7394 seconds
+Time to find match: 0.0106 seconds
+CPU usage start: 80.0%
+Memory usage start: 4689.24 MB
+CPU usage end: 75.4%
+Memory usage end: 4689.04 MB
+Match results: [{'bbox': [201, 123, 319, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.845755934715271}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.7059 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 75.0%
+Memory usage start: 4689.07 MB
+CPU usage end: 82.3%
+Memory usage end: 4686.86 MB
+Match results: [{'bbox': [190, 125, 308, 275], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.721176266670227}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0046 seconds
+Time to get faces: 0.5983 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4686.84 MB
+CPU usage end: 81.7%
+Memory usage end: 4687.07 MB
+Match results: [{'bbox': [201, 122, 318, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8507881760597229}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0320 seconds
+Time to get faces: 0.5605 seconds
+Time to find match: 0.0026 seconds
+CPU usage start: 100.0%
+Memory usage start: 4687.04 MB
+CPU usage end: 76.3%
+Memory usage end: 4687.07 MB
+Match results: [{'bbox': [200, 123, 318, 269], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8558900356292725}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.6301 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 100.0%
+Memory usage start: 4687.02 MB
+CPU usage end: 67.7%
+Memory usage end: 4687.12 MB
+Match results: [{'bbox': [203, 122, 320, 270], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8611334562301636}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0015 seconds
+Time to get faces: 0.4956 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 78.6%
+Memory usage start: 4686.34 MB
+CPU usage end: 47.0%
+Memory usage end: 4686.75 MB
+Match results: [{'bbox': [164, 131, 273, 275], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6651860475540161}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.5228 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 0.0%
+Memory usage start: 4686.96 MB
+CPU usage end: 61.5%
+Memory usage end: 4686.23 MB
+Match results: [{'bbox': [170, 123, 287, 272], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7703460454940796}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0059 seconds
+Time to get faces: 0.5271 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 100.0%
+Memory usage start: 4686.30 MB
+CPU usage end: 52.8%
+Memory usage end: 4684.97 MB
+Match results: [{'bbox': [161, 130, 269, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6342570185661316}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.5334 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 100.0%
+Memory usage start: 4684.95 MB
+CPU usage end: 58.1%
+Memory usage end: 4685.79 MB
+Match results: [{'bbox': [165, 130, 275, 277], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6929633617401123}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.5923 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 100.0%
+Memory usage start: 4685.89 MB
+CPU usage end: 59.7%
+Memory usage end: 4687.41 MB
+Match results: [{'bbox': [164, 131, 274, 277], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.648338258266449}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0074 seconds
+Time to get faces: 0.8070 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 50.0%
+Memory usage start: 4687.37 MB
+CPU usage end: 67.0%
+Memory usage end: 4687.37 MB
+Match results: [{'bbox': [163, 132, 273, 276], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6565116047859192}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0169 seconds
+Time to get faces: 0.7079 seconds
+Time to find match: 0.0010 seconds
+CPU usage start: 0.0%
+Memory usage start: 4687.37 MB
+CPU usage end: 76.5%
+Memory usage end: 4680.00 MB
+Match results: [{'bbox': [162, 132, 270, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6354576945304871}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.6045 seconds
+Time to find match: 0.0030 seconds
+CPU usage start: 100.0%
+Memory usage start: 4679.83 MB
+CPU usage end: 65.6%
+Memory usage end: 4679.98 MB
+Match results: [{'bbox': [160, 131, 271, 283], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6937997937202454}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0059 seconds
+Time to get faces: 0.6106 seconds
+Time to find match: 0.0025 seconds
+CPU usage start: 0.0%
+Memory usage start: 4679.96 MB
+CPU usage end: 55.0%
+Memory usage end: 4681.26 MB
+Match results: [{'bbox': [162, 131, 274, 282], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7220945358276367}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.6251 seconds
+Time to find match: 0.0089 seconds
+CPU usage start: 83.3%
+Memory usage start: 4682.16 MB
+CPU usage end: 72.7%
+Memory usage end: 4682.42 MB
+Match results: [{'bbox': [164, 128, 273, 279], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6440605521202087}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0052 seconds
+Time to get faces: 0.6203 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4682.56 MB
+CPU usage end: 75.0%
+Memory usage end: 4683.04 MB
+Match results: [{'bbox': [174, 123, 296, 276], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6736106872558594}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.6434 seconds
+Time to find match: 0.0030 seconds
+CPU usage start: 100.0%
+Memory usage start: 4681.75 MB
+CPU usage end: 75.9%
+Memory usage end: 4677.22 MB
+Match results: [{'bbox': [191, 123, 308, 276], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8077157735824585}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0102 seconds
+Time to get faces: 0.5894 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 0.0%
+Memory usage start: 4677.62 MB
+CPU usage end: 80.7%
+Memory usage end: 4677.34 MB
+Match results: [{'bbox': [160, 128, 270, 278], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7003160119056702}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.6706 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 100.0%
+Memory usage start: 4677.19 MB
+CPU usage end: 76.2%
+Memory usage end: 4677.49 MB
+Match results: [{'bbox': [168, 125, 288, 278], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8135051131248474}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0064 seconds
+Time to get faces: 0.7176 seconds
+Time to find match: 0.0150 seconds
+CPU usage start: 100.0%
+Memory usage start: 4677.45 MB
+CPU usage end: 87.8%
+Memory usage end: 4678.38 MB
+Match results: [{'bbox': [164, 130, 273, 277], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6366038918495178}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0036 seconds
+Time to get faces: 0.9975 seconds
+Time to find match: 0.0094 seconds
+CPU usage start: 0.0%
+Memory usage start: 4677.43 MB
+CPU usage end: 74.1%
+Memory usage end: 4678.12 MB
+Match results: [{'bbox': [159, 129, 266, 279], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.6566698551177979}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.6441 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 80.0%
+Memory usage start: 4678.16 MB
+CPU usage end: 86.2%
+Memory usage end: 4678.16 MB
+Match results: [{'bbox': [164, 131, 273, 277], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6192684769630432}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.6556 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4678.16 MB
+CPU usage end: 79.5%
+Memory usage end: 4679.64 MB
+Match results: [{'bbox': [161, 131, 269, 280], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.616419792175293}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0127 seconds
+Time to get faces: 0.5674 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 92.9%
+Memory usage start: 4679.59 MB
+CPU usage end: 57.5%
+Memory usage end: 4679.59 MB
+Match results: [{'bbox': [164, 130, 272, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6315578818321228}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.6489 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4679.59 MB
+CPU usage end: 78.6%
+Memory usage end: 4681.46 MB
+Match results: [{'bbox': [163, 129, 272, 275], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6044001579284668}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.6720 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 77.8%
+Memory usage start: 4680.61 MB
+CPU usage end: 73.3%
+Memory usage end: 4680.61 MB
+Match results: [{'bbox': [161, 128, 268, 277], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6278457641601562}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0059 seconds
+Time to get faces: 0.6659 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 85.7%
+Memory usage start: 4680.61 MB
+CPU usage end: 82.8%
+Memory usage end: 4682.28 MB
+Match results: [{'bbox': [164, 129, 273, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6230628490447998}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0092 seconds
+Time to get faces: 0.5855 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 0.0%
+Memory usage start: 4682.26 MB
+CPU usage end: 59.2%
+Memory usage end: 4682.26 MB
+Match results: [{'bbox': [164, 130, 272, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6478955149650574}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.6561 seconds
+Time to find match: 0.0065 seconds
+CPU usage start: 100.0%
+Memory usage start: 4682.26 MB
+CPU usage end: 75.5%
+Memory usage end: 4681.17 MB
+Match results: [{'bbox': [161, 129, 267, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6287768483161926}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.6376 seconds
+Time to find match: 0.0037 seconds
+CPU usage start: 83.3%
+Memory usage start: 4681.30 MB
+CPU usage end: 81.4%
+Memory usage end: 4681.76 MB
+Match results: [{'bbox': [161, 128, 267, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6277855634689331}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.6786 seconds
+Time to find match: 0.0033 seconds
+CPU usage start: 66.7%
+Memory usage start: 4681.76 MB
+CPU usage end: 77.9%
+Memory usage end: 4679.19 MB
+Match results: [{'bbox': [162, 129, 268, 277], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.6171775460243225}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.8105 seconds
+Time to find match: 0.0031 seconds
+CPU usage start: 75.0%
+Memory usage start: 4679.20 MB
+CPU usage end: 68.7%
+Memory usage end: 4679.06 MB
+Match results: [{'bbox': [145, 138, 243, 285], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5125898122787476}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 1.0132 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 90.0%
+Memory usage start: 4679.12 MB
+CPU usage end: 81.3%
+Memory usage end: 4680.67 MB
+Match results: [{'bbox': [161, 127, 268, 276], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5739811062812805}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0048 seconds
+Time to get faces: 0.9872 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 100.0%
+Memory usage start: 4680.64 MB
+CPU usage end: 84.0%
+Memory usage end: 4693.50 MB
+Match results: [{'bbox': [155, 129, 260, 280], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.52122563123703}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.5573 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 0.0%
+Memory usage start: 4693.03 MB
+CPU usage end: 76.8%
+Memory usage end: 4686.69 MB
+Match results: [{'bbox': [150, 133, 252, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5180895328521729}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0069 seconds
+Time to get faces: 0.4841 seconds
+Time to find match: 0.0024 seconds
+CPU usage start: 91.7%
+Memory usage start: 4686.69 MB
+CPU usage end: 57.9%
+Memory usage end: 4683.09 MB
+Match results: [{'bbox': [145, 141, 243, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5388708114624023}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.5704 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4683.06 MB
+CPU usage end: 90.4%
+Memory usage end: 4673.93 MB
+Match results: [{'bbox': [146, 135, 243, 279], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.46180713176727295}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0036 seconds
+Time to get faces: 0.6812 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 100.0%
+Memory usage start: 4673.93 MB
+CPU usage end: 81.2%
+Memory usage end: 4665.70 MB
+Match results: [{'bbox': [147, 138, 245, 282], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5052196979522705}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.8128 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 100.0%
+Memory usage start: 4665.86 MB
+CPU usage end: 77.4%
+Memory usage end: 4667.30 MB
+Match results: [{'bbox': [147, 134, 244, 281], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4914401173591614}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0031 seconds
+Time to get faces: 0.8449 seconds
+Time to find match: 0.0192 seconds
+CPU usage start: 100.0%
+Memory usage start: 4667.27 MB
+CPU usage end: 75.7%
+Memory usage end: 4670.68 MB
+Match results: [{'bbox': [147, 137, 245, 282], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4837695062160492}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.7535 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 85.7%
+Memory usage start: 4671.28 MB
+CPU usage end: 85.4%
+Memory usage end: 4670.09 MB
+Match results: [{'bbox': [148, 138, 248, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5099454522132874}]
+
+======================== Mask ==================
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0018 seconds
+Time to get faces: 0.5138 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 22.2%
+Memory usage start: 4469.76 MB
+CPU usage end: 57.6%
+Memory usage end: 4540.19 MB
+Match results: [{'bbox': [190, 133, 311, 292], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.49168625473976135}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.6001 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 72.7%
+Memory usage start: 4542.40 MB
+CPU usage end: 58.3%
+Memory usage end: 4548.48 MB
+Match results: [{'bbox': [189, 135, 313, 293], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4712439477443695}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0048 seconds
+Time to get faces: 0.6436 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4548.38 MB
+CPU usage end: 85.0%
+Memory usage end: 4549.65 MB
+Match results: [{'bbox': [192, 133, 317, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.47091570496559143}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0029 seconds
+Time to get faces: 0.6355 seconds
+Time to find match: 0.0029 seconds
+CPU usage start: 83.3%
+Memory usage start: 4549.78 MB
+CPU usage end: 81.6%
+Memory usage end: 4547.11 MB
+Match results: [{'bbox': [194, 134, 319, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.48663732409477234}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0140 seconds
+Time to get faces: 0.8013 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 100.0%
+Memory usage start: 4547.13 MB
+CPU usage end: 73.5%
+Memory usage end: 4543.52 MB
+Match results: [{'bbox': [202, 134, 327, 304], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4810645878314972}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 1.0352 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4543.45 MB
+CPU usage end: 81.3%
+Memory usage end: 4538.92 MB
+Match results: [{'bbox': [198, 136, 319, 298], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.45349571108818054}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.8686 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4538.77 MB
+CPU usage end: 84.9%
+Memory usage end: 4531.14 MB
+Match results: [{'bbox': [203, 134, 327, 307], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5111514329910278}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0123 seconds
+Time to get faces: 0.6980 seconds
+Time to find match: 0.0033 seconds
+CPU usage start: 50.0%
+Memory usage start: 4531.16 MB
+CPU usage end: 82.9%
+Memory usage end: 4530.11 MB
+Match results: [{'bbox': [200, 137, 326, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4850391447544098}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0064 seconds
+Time to get faces: 0.7037 seconds
+Time to find match: 0.0108 seconds
+CPU usage start: 80.4%
+Memory usage start: 4528.20 MB
+CPU usage end: 81.9%
+Memory usage end: 4527.94 MB
+Match results: [{'bbox': [201, 136, 325, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4720415472984314}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.7061 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 79.3%
+Memory usage start: 4526.55 MB
+CPU usage end: 82.3%
+Memory usage end: 4532.29 MB
+Match results: [{'bbox': [196, 134, 322, 309], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4934109151363373}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0044 seconds
+Time to get faces: 0.5673 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 33.3%
+Memory usage start: 4531.31 MB
+CPU usage end: 81.7%
+Memory usage end: 4531.57 MB
+Match results: [{'bbox': [202, 134, 329, 309], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5082972049713135}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.5239 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4531.34 MB
+CPU usage end: 69.4%
+Memory usage end: 4515.78 MB
+Match results: [{'bbox': [204, 135, 328, 305], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5095369219779968}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0021 seconds
+Time to get faces: 0.7334 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4515.78 MB
+CPU usage end: 72.3%
+Memory usage end: 4522.61 MB
+Match results: [{'bbox': [193, 135, 320, 308], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5211370587348938}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0173 seconds
+Time to get faces: 0.5589 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4522.56 MB
+CPU usage end: 75.4%
+Memory usage end: 4525.51 MB
+Match results: [{'bbox': [199, 136, 325, 303], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4839751422405243}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.5838 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 100.0%
+Memory usage start: 4525.70 MB
+CPU usage end: 82.4%
+Memory usage end: 4524.77 MB
+Match results: [{'bbox': [191, 134, 321, 305], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4967418909072876}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.6140 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 0.0%
+Memory usage start: 4524.77 MB
+CPU usage end: 88.2%
+Memory usage end: 4525.48 MB
+Match results: [{'bbox': [191, 134, 318, 308], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5221544504165649}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6198 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 100.0%
+Memory usage start: 4525.45 MB
+CPU usage end: 69.2%
+Memory usage end: 4525.80 MB
+Match results: [{'bbox': [193, 134, 319, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5137729644775391}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.5676 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 66.7%
+Memory usage start: 4525.80 MB
+CPU usage end: 75.4%
+Memory usage end: 4526.55 MB
+Match results: [{'bbox': [192, 134, 318, 300], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4938281178474426}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.6020 seconds
+Time to find match: 0.0037 seconds
+CPU usage start: 100.0%
+Memory usage start: 4526.97 MB
+CPU usage end: 0.0%
+Memory usage end: 4527.10 MB
+Match results: [{'bbox': [190, 134, 318, 304], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5199257731437683}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5975 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4527.18 MB
+CPU usage end: 73.3%
+Memory usage end: 4526.09 MB
+Match results: [{'bbox': [190, 136, 314, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4787660241127014}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0132 seconds
+Time to get faces: 0.6037 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4526.01 MB
+CPU usage end: 73.0%
+Memory usage end: 4526.32 MB
+Match results: [{'bbox': [187, 135, 314, 306], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.48410072922706604}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.7638 seconds
+Time to find match: 0.0011 seconds
+CPU usage start: 84.2%
+Memory usage start: 4526.18 MB
+CPU usage end: 73.4%
+Memory usage end: 4526.18 MB
+Match results: [{'bbox': [192, 136, 319, 306], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.495461106300354}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.5478 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4526.10 MB
+CPU usage end: 58.4%
+Memory usage end: 4522.36 MB
+Match results: [{'bbox': [190, 134, 316, 305], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5196018815040588}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.6064 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 100.0%
+Memory usage start: 4522.36 MB
+CPU usage end: 79.4%
+Memory usage end: 4519.89 MB
+Match results: [{'bbox': [194, 137, 318, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5083829164505005}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0131 seconds
+Time to get faces: 0.6373 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4519.83 MB
+CPU usage end: 82.0%
+Memory usage end: 4520.07 MB
+Match results: [{'bbox': [189, 138, 314, 307], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.45029217004776}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0035 seconds
+Time to get faces: 0.6002 seconds
+Time to find match: 0.0022 seconds
+CPU usage start: 50.0%
+Memory usage start: 4519.96 MB
+CPU usage end: 75.4%
+Memory usage end: 4519.59 MB
+Match results: [{'bbox': [190, 135, 314, 304], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5189289450645447}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0071 seconds
+Time to get faces: 0.6187 seconds
+Time to find match: 0.0040 seconds
+CPU usage start: 75.0%
+Memory usage start: 4520.06 MB
+CPU usage end: 76.3%
+Memory usage end: 4514.37 MB
+Match results: [{'bbox': [196, 137, 317, 300], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.48490363359451294}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0026 seconds
+Time to get faces: 0.7591 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 76.9%
+Memory usage start: 4514.31 MB
+CPU usage end: 64.7%
+Memory usage end: 4516.94 MB
+Match results: [{'bbox': [195, 137, 311, 297], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.48652881383895874}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.5975 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 72.7%
+Memory usage start: 4517.04 MB
+CPU usage end: 76.3%
+Memory usage end: 4517.04 MB
+Match results: [{'bbox': [194, 138, 317, 303], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.47647085785865784}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0095 seconds
+Time to get faces: 0.8527 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 100.0%
+Memory usage start: 4517.04 MB
+CPU usage end: 73.9%
+Memory usage end: 4524.42 MB
+Match results: [{'bbox': [190, 134, 318, 293], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5311872959136963}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0034 seconds
+Time to get faces: 0.5194 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4524.42 MB
+CPU usage end: 76.9%
+Memory usage end: 4517.09 MB
+Match results: [{'bbox': [191, 137, 317, 298], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5284291505813599}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.4630 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 100.0%
+Memory usage start: 4516.95 MB
+CPU usage end: 38.4%
+Memory usage end: 4517.89 MB
+Match results: [{'bbox': [194, 136, 318, 306], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5320101976394653}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0026 seconds
+Time to get faces: 0.7339 seconds
+Time to find match: 0.0096 seconds
+CPU usage start: 100.0%
+Memory usage start: 4518.12 MB
+CPU usage end: 76.4%
+Memory usage end: 4519.00 MB
+Match results: [{'bbox': [192, 131, 320, 290], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5284292101860046}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0123 seconds
+Time to get faces: 0.7373 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 70.8%
+Memory usage start: 4518.75 MB
+CPU usage end: 70.4%
+Memory usage end: 4520.04 MB
+Match results: [{'bbox': [191, 131, 318, 291], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5338456630706787}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0088 seconds
+Time to get faces: 0.5905 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 78.9%
+Memory usage start: 4520.17 MB
+CPU usage end: 80.5%
+Memory usage end: 4516.68 MB
+Match results: [{'bbox': [193, 132, 318, 291], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5152609348297119}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0036 seconds
+Time to get faces: 0.5781 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4516.51 MB
+CPU usage end: 78.7%
+Memory usage end: 4508.48 MB
+Match results: [{'bbox': [192, 130, 318, 292], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5483124852180481}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.5493 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 66.7%
+Memory usage start: 4508.34 MB
+CPU usage end: 57.3%
+Memory usage end: 4503.05 MB
+Match results: [{'bbox': [193, 135, 318, 299], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5277213454246521}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0034 seconds
+Time to get faces: 0.6275 seconds
+Time to find match: 0.0040 seconds
+CPU usage start: 0.0%
+Memory usage start: 4503.00 MB
+CPU usage end: 84.8%
+Memory usage end: 4491.14 MB
+Match results: [{'bbox': [193, 135, 320, 299], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5417109727859497}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0041 seconds
+Time to get faces: 0.9173 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 80.0%
+Memory usage start: 4491.08 MB
+CPU usage end: 81.5%
+Memory usage end: 4481.79 MB
+Match results: [{'bbox': [196, 136, 320, 299], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.43928444385528564}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0042 seconds
+Time to get faces: 0.9174 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 86.7%
+Memory usage start: 4480.93 MB
+CPU usage end: 74.8%
+Memory usage end: 4470.41 MB
+Match results: [{'bbox': [195, 134, 320, 299], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5284345149993896}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0063 seconds
+Time to get faces: 0.7864 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 100.0%
+Memory usage start: 4470.30 MB
+CPU usage end: 78.6%
+Memory usage end: 4456.00 MB
+Match results: [{'bbox': [202, 141, 326, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.510817289352417}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.6549 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 66.7%
+Memory usage start: 4455.09 MB
+CPU usage end: 78.7%
+Memory usage end: 4455.41 MB
+Match results: [{'bbox': [206, 138, 330, 303], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.49723076820373535}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0044 seconds
+Time to get faces: 0.5961 seconds
+Time to find match: 0.0098 seconds
+CPU usage start: 100.0%
+Memory usage start: 4455.41 MB
+CPU usage end: 83.4%
+Memory usage end: 4455.52 MB
+Match results: [{'bbox': [207, 137, 331, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5076895356178284}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.7338 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 62.5%
+Memory usage start: 4455.44 MB
+CPU usage end: 79.6%
+Memory usage end: 4455.64 MB
+Match results: [{'bbox': [197, 135, 321, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5367648005485535}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.4867 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 0.0%
+Memory usage start: 4455.51 MB
+CPU usage end: 65.7%
+Memory usage end: 4456.15 MB
+Match results: [{'bbox': [207, 138, 332, 301], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.48455139994621277}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0042 seconds
+Time to get faces: 0.7088 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 92.0%
+Memory usage start: 4456.13 MB
+CPU usage end: 83.9%
+Memory usage end: 4451.75 MB
+Match results: [{'bbox': [203, 140, 327, 302], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5008108019828796}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0055 seconds
+Time to get faces: 0.4768 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4451.62 MB
+CPU usage end: 49.5%
+Memory usage end: 4452.84 MB
+Match results: [{'bbox': [199, 140, 326, 309], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.49646487832069397}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.5238 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 100.0%
+Memory usage start: 4452.79 MB
+CPU usage end: 72.1%
+Memory usage end: 4448.70 MB
+Match results: [{'bbox': [200, 139, 326, 307], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5135512948036194}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0040 seconds
+Time to get faces: 0.6599 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4448.56 MB
+CPU usage end: 65.4%
+Memory usage end: 4449.24 MB
+Match results: [{'bbox': [198, 139, 324, 311], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5226999521255493}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0079 seconds
+Time to get faces: 0.5047 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 100.0%
+Memory usage start: 4449.18 MB
+CPU usage end: 59.3%
+Memory usage end: 4449.48 MB
+Match results: [{'bbox': [198, 139, 325, 305], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5338402986526489}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.5513 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 100.0%
+Memory usage start: 4449.43 MB
+CPU usage end: 77.2%
+Memory usage end: 4448.21 MB
+Match results: [{'bbox': [197, 140, 324, 313], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5037102699279785}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.4997 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 81.8%
+Memory usage start: 4448.13 MB
+CPU usage end: 55.5%
+Memory usage end: 4442.29 MB
+Match results: [{'bbox': [202, 141, 328, 306], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5063779354095459}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0157 seconds
+Time to get faces: 0.5765 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4442.20 MB
+CPU usage end: 89.4%
+Memory usage end: 4443.91 MB
+Match results: [{'bbox': [202, 140, 328, 309], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5150594711303711}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.6676 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 100.0%
+Memory usage start: 4443.78 MB
+CPU usage end: 0.0%
+Memory usage end: 4434.56 MB
+Match results: [{'bbox': [200, 140, 327, 307], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5126743316650391}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0062 seconds
+Time to get faces: 0.5695 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 0.0%
+Memory usage start: 4434.49 MB
+CPU usage end: 75.4%
+Memory usage end: 4435.32 MB
+Match results: [{'bbox': [190, 135, 318, 292], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5233254432678223}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0033 seconds
+Time to get faces: 0.8860 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4435.42 MB
+CPU usage end: 76.7%
+Memory usage end: 4436.81 MB
+Match results: [{'bbox': [179, 135, 299, 281], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4754749834537506}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0056 seconds
+Time to get faces: 0.8019 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 100.0%
+Memory usage start: 4436.70 MB
+CPU usage end: 66.4%
+Memory usage end: 4442.68 MB
+Match results: [{'bbox': [202, 141, 329, 307], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.5143073201179504}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0037 seconds
+Time to get faces: 0.7325 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 80.8%
+Memory usage start: 4442.96 MB
+CPU usage end: 75.9%
+Memory usage end: 4447.64 MB
+Match results: [{'bbox': [173, 135, 288, 284], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.461148202419281}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.7154 seconds
+Time to find match: 0.0048 seconds
+CPU usage start: 100.0%
+Memory usage start: 4447.57 MB
+CPU usage end: 72.1%
+Memory usage end: 4450.03 MB
+Match results: [{'bbox': [172, 135, 286, 285], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4520796537399292}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0070 seconds
+Time to get faces: 0.9676 seconds
+Time to find match: 0.0404 seconds
+CPU usage start: 100.0%
+Memory usage start: 4449.97 MB
+CPU usage end: 75.1%
+Memory usage end: 4453.32 MB
+Match results: [{'bbox': [171, 135, 284, 285], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.46435272693634033}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.8398 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 81.8%
+Memory usage start: 4453.61 MB
+CPU usage end: 0.0%
+Memory usage end: 4451.12 MB
+Match results: [{'bbox': [175, 135, 294, 290], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.49408620595932007}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0162 seconds
+Time to get faces: 0.6076 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 0.0%
+Memory usage start: 4451.23 MB
+CPU usage end: 84.1%
+Memory usage end: 4451.99 MB
+Match results: [{'bbox': [176, 135, 294, 289], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4596492052078247}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0028 seconds
+Time to get faces: 0.6725 seconds
+Time to find match: 0.0017 seconds
+CPU usage start: 75.0%
+Memory usage start: 4452.26 MB
+CPU usage end: 80.3%
+Memory usage end: 4449.49 MB
+Match results: [{'bbox': [169, 136, 285, 284], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4473411738872528}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0100 seconds
+Time to get faces: 0.8715 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 79.4%
+Memory usage start: 4449.21 MB
+CPU usage end: 73.8%
+Memory usage end: 4449.61 MB
+Match results: [{'bbox': [168, 135, 283, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4327811300754547}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0026 seconds
+Time to get faces: 0.7597 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 80.0%
+Memory usage start: 4449.48 MB
+CPU usage end: 81.4%
+Memory usage end: 4449.48 MB
+Match results: [{'bbox': [168, 135, 284, 285], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.40073472261428833}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0024 seconds
+Time to get faces: 0.7272 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 0.0%
+Memory usage start: 4449.48 MB
+CPU usage end: 77.8%
+Memory usage end: 4436.45 MB
+Match results: [{'bbox': [168, 136, 283, 283], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.43227535486221313}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0086 seconds
+Time to get faces: 0.5082 seconds
+Time to find match: 0.0020 seconds
+CPU usage start: 0.0%
+Memory usage start: 4435.52 MB
+CPU usage end: 77.5%
+Memory usage end: 4436.58 MB
+Match results: [{'bbox': [167, 136, 281, 281], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.41932371258735657}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0031 seconds
+Time to get faces: 0.6890 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4436.58 MB
+CPU usage end: 79.5%
+Memory usage end: 4425.36 MB
+Match results: [{'bbox': [169, 136, 282, 281], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.39443138241767883}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.8150 seconds
+Time to find match: 0.0019 seconds
+CPU usage start: 75.0%
+Memory usage start: 4425.29 MB
+CPU usage end: 70.7%
+Memory usage end: 4425.95 MB
+Match results: [{'bbox': [168, 135, 283, 280], 'matched': False, 'name': 'Unkown', 'gussed': 'sakina', 'score': 0.4071881175041199}]
+
+================= low light ================================
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0017 seconds
+Time to get faces: 0.4851 seconds
+Time to find match: 0.0042 seconds
+CPU usage start: 26.3%
+Memory usage start: 4450.83 MB
+CPU usage end: 48.2%
+Memory usage end: 4546.53 MB
+Match results: [{'bbox': [192, 63, 315, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7296172380447388}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0053 seconds
+Time to get faces: 0.7986 seconds
+Time to find match: 0.0031 seconds
+CPU usage start: 83.3%
+Memory usage start: 4550.20 MB
+CPU usage end: 83.2%
+Memory usage end: 4578.54 MB
+Match results: [{'bbox': [192, 60, 316, 225], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7285666465759277}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0027 seconds
+Time to get faces: 0.6171 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 66.7%
+Memory usage start: 4578.05 MB
+CPU usage end: 76.4%
+Memory usage end: 4579.96 MB
+Match results: [{'bbox': [192, 61, 314, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7293591499328613}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0085 seconds
+Time to get faces: 0.5920 seconds
+Time to find match: 0.0016 seconds
+CPU usage start: 78.6%
+Memory usage start: 4579.92 MB
+CPU usage end: 69.3%
+Memory usage end: 4583.53 MB
+Match results: [{'bbox': [193, 59, 316, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7469508051872253}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0023 seconds
+Time to get faces: 0.6635 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 66.7%
+Memory usage start: 4582.84 MB
+CPU usage end: 67.4%
+Memory usage end: 4583.93 MB
+Match results: [{'bbox': [192, 62, 313, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7984809279441833}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0091 seconds
+Time to get faces: 0.7405 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4584.14 MB
+CPU usage end: 78.5%
+Memory usage end: 4584.66 MB
+Match results: [{'bbox': [192, 61, 314, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7480779886245728}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0061 seconds
+Time to get faces: 0.5704 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4584.67 MB
+CPU usage end: 76.2%
+Memory usage end: 4582.21 MB
+Match results: [{'bbox': [191, 64, 313, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.749862015247345}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0098 seconds
+Time to get faces: 0.6996 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4582.21 MB
+CPU usage end: 76.1%
+Memory usage end: 4583.06 MB
+Match results: [{'bbox': [192, 62, 316, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7722799181938171}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0030 seconds
+Time to get faces: 0.6076 seconds
+Time to find match: 0.0050 seconds
+CPU usage start: 75.0%
+Memory usage start: 4582.81 MB
+CPU usage end: 76.7%
+Memory usage end: 4585.85 MB
+Match results: [{'bbox': [192, 62, 315, 225], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7525047659873962}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.7036 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 78.9%
+Memory usage start: 4578.75 MB
+CPU usage end: 76.6%
+Memory usage end: 4557.75 MB
+Match results: [{'bbox': [191, 62, 312, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7997561097145081}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6660 seconds
+Time to find match: 0.0021 seconds
+CPU usage start: 100.0%
+Memory usage start: 4557.75 MB
+CPU usage end: 77.0%
+Memory usage end: 4553.71 MB
+Match results: [{'bbox': [190, 65, 311, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7718158960342407}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.6792 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 60.0%
+Memory usage start: 4553.72 MB
+CPU usage end: 83.2%
+Memory usage end: 4553.64 MB
+Match results: [{'bbox': [191, 66, 311, 226], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7516466379165649}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0146 seconds
+Time to get faces: 0.6383 seconds
+Time to find match: 0.0025 seconds
+CPU usage start: 0.0%
+Memory usage start: 4553.59 MB
+CPU usage end: 77.1%
+Memory usage end: 4553.59 MB
+Match results: [{'bbox': [191, 62, 311, 224], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7531686425209045}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0040 seconds
+Time to get faces: 0.8084 seconds
+Time to find match: 0.0039 seconds
+CPU usage start: 60.0%
+Memory usage start: 4553.59 MB
+CPU usage end: 71.3%
+Memory usage end: 4559.42 MB
+Match results: [{'bbox': [189, 65, 311, 226], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7570873498916626}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0050 seconds
+Time to get faces: 0.6164 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 75.0%
+Memory usage start: 4558.41 MB
+CPU usage end: 0.0%
+Memory usage end: 4559.32 MB
+Match results: [{'bbox': [190, 65, 310, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7535223960876465}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6096 seconds
+Time to find match: 0.0012 seconds
+CPU usage start: 0.0%
+Memory usage start: 4559.30 MB
+CPU usage end: 80.0%
+Memory usage end: 4560.54 MB
+Match results: [{'bbox': [189, 65, 310, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7646871209144592}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0014 seconds
+Time to get faces: 0.5989 seconds
+Time to find match: 0.0175 seconds
+CPU usage start: 100.0%
+Memory usage start: 4560.54 MB
+CPU usage end: 79.8%
+Memory usage end: 4562.45 MB
+Match results: [{'bbox': [190, 66, 311, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7682347893714905}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0029 seconds
+Time to get faces: 0.6548 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4561.52 MB
+CPU usage end: 81.5%
+Memory usage end: 4561.99 MB
+Match results: [{'bbox': [190, 64, 311, 226], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7642070651054382}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0019 seconds
+Time to get faces: 0.6483 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4561.94 MB
+CPU usage end: 80.3%
+Memory usage end: 4562.91 MB
+Match results: [{'bbox': [189, 64, 311, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7701138257980347}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0025 seconds
+Time to get faces: 0.6873 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 77.8%
+Memory usage start: 4561.80 MB
+CPU usage end: 79.4%
+Memory usage end: 4564.44 MB
+Match results: [{'bbox': [189, 67, 309, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7770381569862366}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0114 seconds
+Time to get faces: 0.6080 seconds
+Time to find match: 0.0018 seconds
+CPU usage start: 100.0%
+Memory usage start: 4564.39 MB
+CPU usage end: 82.4%
+Memory usage end: 4565.14 MB
+Match results: [{'bbox': [189, 65, 309, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.753228485584259}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0126 seconds
+Time to get faces: 0.9130 seconds
+Time to find match: 0.0028 seconds
+CPU usage start: 0.0%
+Memory usage start: 4564.73 MB
+CPU usage end: 78.8%
+Memory usage end: 4565.84 MB
+Match results: [{'bbox': [189, 66, 309, 226], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7712648510932922}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0039 seconds
+Time to get faces: 0.6868 seconds
+Time to find match: 0.0014 seconds
+CPU usage start: 0.0%
+Memory usage start: 4565.79 MB
+CPU usage end: 70.4%
+Memory usage end: 4566.25 MB
+Match results: [{'bbox': [191, 65, 311, 226], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.769802451133728}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0022 seconds
+Time to get faces: 0.5838 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 100.0%
+Memory usage start: 4566.30 MB
+CPU usage end: 80.9%
+Memory usage end: 4567.55 MB
+Match results: [{'bbox': [191, 67, 312, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8060920238494873}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6056 seconds
+Time to find match: 0.0013 seconds
+CPU usage start: 100.0%
+Memory usage start: 4567.98 MB
+CPU usage end: 0.0%
+Memory usage end: 4578.41 MB
+Match results: [{'bbox': [193, 64, 315, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.7644849419593811}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0386 seconds
+Time to get faces: 0.6704 seconds
+Time to find match: 0.0009 seconds
+CPU usage start: 0.0%
+Memory usage start: 4578.41 MB
+CPU usage end: 75.7%
+Memory usage end: 4580.35 MB
+Match results: [{'bbox': [188, 64, 309, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8179530501365662}]
+
+CoreMLExecutionProvider
+Threshold: 0.65
+Time to convert to image: 0.0020 seconds
+Time to get faces: 0.6897 seconds
+Time to find match: 0.0015 seconds
+CPU usage start: 75.0%
+Memory usage start: 4580.88 MB
+CPU usage end: 77.3%
+Memory usage end: 4581.89 MB
+Match results: [{'bbox': [193, 64, 317, 227], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.784827709197998}]
+
