@@ -2,8 +2,8 @@
 1. Create a virtual environment and activate it:
    ```bash
    python -m venv venv
-   source venv/bin/activate   
-   venv\Scripts\activate    
+   source venv/bin/activate   # Mac/Linux
+   venv\Scripts\activate    # Windows 
    ```
 2. Install requirements:
    ```bash
