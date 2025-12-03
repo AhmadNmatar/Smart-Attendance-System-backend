@@ -32,7 +32,7 @@ class InsightFaceEmbedder:
         print(res)
         return res
     
-    def find_match(self, face, embeddings, session, threshold: float = 0.65):
+    def find_match(self, face, embeddings, session, threshold: float):
         results = [] 
 
         emb = face.embedding 
@@ -41,7 +41,7 @@ class InsightFaceEmbedder:
         emb_id = 0
         for e in embeddings: 
             ref_emb = np.frombuffer(e.vector, dtype=np.float32)
-            similarity, is_match = cosine_similarity(emb, ref_emb) 
+            similarity, is_match = cosine_similarity(emb, ref_emb, threshold) 
             if similarity > best_score: 
                 best_score = similarity 
                 emb_id = e.embedding_id
@@ -78,7 +78,7 @@ def calculate_embeddings_avg(embs: list[np.ndarray]) -> np.ndarray:
     return avg_emb
 
 
-def cosine_similarity(emb1: np.ndarray, emb2: np.ndarray, threshold: float = 0.65 ):
+def cosine_similarity(emb1: np.ndarray, emb2: np.ndarray, threshold: float ):
     denom = (np.linalg.norm(emb1) * np.linalg.norm(emb2)) + 1e-8
     similarity = float(np.dot(emb1, emb2) / denom)
     return similarity, similarity > threshold

@@ -227,14 +227,14 @@ async def take_attendace(request: Request, session: SessionDep , current_user: c
 
     faces = embedder.app.get(frame)
 
-
+    THRESHOLD = 0.65
     if len(faces) < 1:
        return {" no faces ": {}, "attendance": {}}
     if len(faces) > 1:
         print("Warning: Multiple faces detected. Using first detected face")
     
 
-    results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=0.65)
+    results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
     
     created ={}
 
