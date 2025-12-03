@@ -265,7 +265,9 @@ CPU usage end: 0.0%
 Memory usage end: 4663.11 MB
 Match results: [{'bbox': [133, 122, 250, 279], 'matched': True, 'person_id': 14, 'first_name': 'sakina', 'last_name': 'Agharzayeva', 'gussed': '', 'score': 0.8332828879356384}]
 
-=================== distance 150 cm ================CoreMLExecutionProvider
+=================== distance 150 cm ================
+
+CoreMLExecutionProvider
 Threshold: 0.65
 Time to convert to image: 0.0015 seconds
 Time to get faces: 0.4842 seconds
