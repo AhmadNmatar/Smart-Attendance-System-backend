@@ -25,7 +25,6 @@ current_admin_dep = Annotated[Administrator, Depends(get_current_admin)]
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
 
-# --- app-scoped singletons (set on startup in main.py) ---
 embedder: Optional[InsightFaceEmbedder] = None
 
 
@@ -64,7 +63,6 @@ def enroll_face(req: EnrollReq, session: SessionDep, current_user: current_admin
 
     emb = emb.astype(np.float32).tobytes()
 
-    # --- create person, then embedding linked to that person ---
     created_emb = add_new_emb(Embedding(vector=emb), session)
     
     person = create_person(
@@ -246,7 +244,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     cpu_usage_end = psutil.cpu_percent()
     memory_usage_end = psutil.virtual_memory().used
 
-    with open("random.txt", "a") as f:
+    with open("last.txt", "a") as f:
         f.write(f"CoreMLExecutionProvider\n")
         f.write(f"Threshold: {THRESHOLD}\n")
         f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
