@@ -15,7 +15,7 @@ class InsightFaceEmbedder:
             providers = ['CoreMLExecutionProvider']
 
         self.app = FaceAnalysis(name=model_name, providers=providers)
-        ctx_id = 0 # 0 for GPU
+        ctx_id = 0 
         self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
 
     def get_face_embedding_image(self, image_path : str):
