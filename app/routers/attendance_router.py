@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends, Request, status
 from pydantic import BaseModel
 from typing import Optional, List, Annotated
-import cv2, subprocess, sys, numpy as np, os
+import cv2, subprocess, sys, numpy as np, os, time, psutil
 from app.services.face_service import InsightFaceEmbedder, calculate_embeddings_avg, cosine_similarity
 from app.config.dbsetup import engine
 from app.models.person import PersonCreate
@@ -25,7 +25,6 @@ current_admin_dep = Annotated[Administrator, Depends(get_current_admin)]
 
 router = APIRouter(prefix="/attendance", tags=["attendance"])
 
-# --- app-scoped singletons (set on startup in main.py) ---
 embedder: Optional[InsightFaceEmbedder] = None
 
 
@@ -64,7 +63,6 @@ def enroll_face(req: EnrollReq, session: SessionDep, current_user: current_admin
 
     emb = emb.astype(np.float32).tobytes()
 
-    # --- create person, then embedding linked to that person ---
     created_emb = add_new_emb(Embedding(vector=emb), session)
     
     person = create_person(
@@ -191,16 +189,18 @@ def enroll_camera(req : EnrollReq, session: SessionDep, current_user: current_ad
 
 
 
-# take_attendace recieve a frame captured by camera from frontend as blob, convert it back to image and perform recognition logic
+
 @router.post("/take_attendance")
-async def take_attendace(request: Request, session: SessionDep , current_user: current_admin_dep):
+async def take_attendace(request: Request, session: SessionDep, current_user: current_admin_dep):
     global embedder
     if embedder is None:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="Vision pipeline not ready",
         )
-   
+    cpu_usage_start = psutil.cpu_percent()
+    memory_usage_start = psutil.virtual_memory().used
+    start_time = time.time()
     try:
         raw_bytes: bytes = await request.body()
         if not raw_bytes:
@@ -213,7 +213,7 @@ async def take_attendace(request: Request, session: SessionDep , current_user: c
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Unable to read request body",
         )
-
+    
     nparr = np.frombuffer(raw_bytes, np.uint8)
     frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     if frame is None:
@@ -221,27 +221,52 @@ async def take_attendace(request: Request, session: SessionDep , current_user: c
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Invalid image data",
         )
+    time_to_image = time.time() - start_time
+
+    
+    THRESHOLD = 0.65
+    start_time = time.time()
     embeddings = get_all(session)
     if not embeddings:
         return {"No embeddings found in db"}
 
     faces = embedder.app.get(frame)
+    time_to_faces = time.time() - start_time
 
+    start_time = time.time()   
     THRESHOLD = 0.65
     if len(faces) < 1:
-       return {" no faces ": {}, "attendance": {}}
+        print("no face detected")
+        return {"no faces": {}, "attendance": {}}
     if len(faces) > 1:
         print("Warning: Multiple faces detected. Using first detected face")
-    
 
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
-    
-    created ={}
+    time_to_match = time.time() - start_time
+
+    cpu_usage_end = psutil.cpu_percent()
+    memory_usage_end = psutil.virtual_memory().used
+
+    with open("last.txt", "a") as f:
+        f.write(f"CoreMLExecutionProvider\n")
+        f.write(f"Threshold: {THRESHOLD}\n")
+        f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
+        f.write(f"Time to get faces: {time_to_faces:.4f} seconds\n")
+        f.write(f"Time to find match: {time_to_match:.4f} seconds\n")
+        f.write(f"CPU usage start: {cpu_usage_start}%\n")
+        f.write(f"Memory usage start: {memory_usage_start / (1024 ** 2):.2f} MB\n")
+        f.write(f"CPU usage end: {cpu_usage_end}%\n")
+        f.write(f"Memory usage end: {memory_usage_end / (1024 ** 2):.2f} MB\n")
+        f.write(f"Match results: {results}\n\n")
+
+    created = {}
 
     if not results[0]["matched"]:
-            return { "faces": results, "attendance": [] }
+        print(f"{{score: {results[0]['score']},\n name: {results[0]['name']},\n gissed : {results[0]['gussed']} ,\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
+        return {"faces": results, "attendance": []}
+    
     person_id = results[0]["person_id"]
-    if person_id not in seen_today:      
+    if person_id not in seen_today:
         created = add_attendance(
             AttendanceCreate(person_id=results[0]["person_id"], status_id=1),
             session,
@@ -251,4 +276,6 @@ async def take_attendace(request: Request, session: SessionDep , current_user: c
         return {"attendance": created}
 
     print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}") 
-    return { "attendance": {}}
+        
+
+    return {"faces": results, "attendance": {}, "created": created}
