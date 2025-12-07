@@ -31,7 +31,6 @@ embedder: Optional[InsightFaceEmbedder] = None
 class EnrollReq(BaseModel):
     first_name: str
     last_name :str
-    #image_path: str
 
 class RecognizeReq(BaseModel):
     image_path :str
@@ -196,9 +195,6 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
             detail="Vision pipeline not ready",
         )
-    cpu_usage_start = psutil.cpu_percent()
-    memory_usage_start = psutil.virtual_memory().used
-    start_time = time.time()
     try:
         raw_bytes: bytes = await request.body()
         if not raw_bytes:
@@ -219,19 +215,15 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Invalid image data",
         )
-    time_to_image = time.time() - start_time
 
     
     THRESHOLD = 0.65
-    start_time = time.time()
     embeddings = get_all(session)
     if not embeddings:
         return {"No embeddings found in db"}
 
     faces = embedder.app.get(frame)
-    time_to_faces = time.time() - start_time
 
-    start_time = time.time()
     if len(faces) < 1:
         print("no face detected")
         return {"no faces": {}, "attendance": {}}
@@ -239,22 +231,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
         print("Warning: Multiple faces detected. Using first detected face")
 
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
-    time_to_match = time.time() - start_time
 
-    cpu_usage_end = psutil.cpu_percent()
-    memory_usage_end = psutil.virtual_memory().used
-
-    with open("last.txt", "a") as f:
-        f.write(f"CoreMLExecutionProvider\n")
-        f.write(f"Threshold: {THRESHOLD}\n")
-        f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
-        f.write(f"Time to get faces: {time_to_faces:.4f} seconds\n")
-        f.write(f"Time to find match: {time_to_match:.4f} seconds\n")
-        f.write(f"CPU usage start: {cpu_usage_start}%\n")
-        f.write(f"Memory usage start: {memory_usage_start / (1024 ** 2):.2f} MB\n")
-        f.write(f"CPU usage end: {cpu_usage_end}%\n")
-        f.write(f"Memory usage end: {memory_usage_end / (1024 ** 2):.2f} MB\n")
-        f.write(f"Match results: {results}\n\n")
 
     created = {}
 

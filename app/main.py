@@ -26,7 +26,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Smart Attendance System API", lifespan=lifespan)
 
-origins = [    "http://127.0.0.1:5000",
+origins = [ "http://127.0.0.1:5000",
     "http://localhost:5000",]
 app.add_middleware(
     CORSMiddleware,
