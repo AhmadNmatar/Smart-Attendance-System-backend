@@ -14,7 +14,7 @@ class InsightFaceEmbedder:
         if 'CoreMLExecutionProvider' in available:
             providers = ['CoreMLExecutionProvider']
 
-        self.app = FaceAnalysis(name=model_name, providers=['CoreMLExecutionProvider'])
+        self.app = FaceAnalysis(name=model_name, providers=providers)
         ctx_id = 0 # 0 for GPU
         self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
 
