@@ -14,7 +14,7 @@ class InsightFaceEmbedder:
         if 'CoreMLExecutionProvider' in available:
             providers = ['CoreMLExecutionProvider']
 
-        self.app = FaceAnalysis(name=model_name, providers=['CoreMLExecutionProvider'])
+        self.app = FaceAnalysis(name=model_name, providers=providers)
         ctx_id = 0 # 0 for GPU
         self.app.prepare(ctx_id=ctx_id, det_size=(640, 640))
 
@@ -48,7 +48,7 @@ class InsightFaceEmbedder:
         emb_id = 0
         for e in embeddings: 
             ref_emb = np.frombuffer(e.vector, dtype=np.float32)
-            similarity, is_match = cosine_similarity(emb, ref_emb, threshold) 
+            similarity = cosine_similarity(emb, ref_emb) 
             if similarity > best_score: 
                 best_score = similarity 
                 emb_id = e.embedding_id
@@ -86,7 +86,7 @@ def calculate_embeddings_avg(embs: list[np.ndarray]) -> np.ndarray:
     return avg_emb
 
 
-def cosine_similarity(emb1: np.ndarray, emb2: np.ndarray, threshold: float ):
+def cosine_similarity(emb1: np.ndarray, emb2: np.ndarray):
     denom = (np.linalg.norm(emb1) * np.linalg.norm(emb2)) + 1e-8
     similarity = float(np.dot(emb1, emb2) / denom)
     return similarity
