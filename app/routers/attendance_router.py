@@ -138,8 +138,7 @@ def enroll_faces(req: EnrollReq, session: SessionDep, current_user: current_admi
         "enrolled person" : req.first_name
     }
 
-# enroll_camera responsoble for enroll new user, when it recieve request from frontend it trigger a helper process to
-# open camera gui, take 10 pics and compute the avarage embedding for all pics and finally detele all images
+
 @router.post("/enroll_camera")
 def enroll_camera(req : EnrollReq, session: SessionDep, current_user: current_admin_dep):
     global embedder
@@ -189,7 +188,6 @@ def enroll_camera(req : EnrollReq, session: SessionDep, current_user: current_ad
 
 
 
-
 @router.post("/take_attendance")
 async def take_attendace(request: Request, session: SessionDep, current_user: current_admin_dep):
     global embedder
@@ -233,8 +231,7 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     faces = embedder.app.get(frame)
     time_to_faces = time.time() - start_time
 
-    start_time = time.time()   
-    THRESHOLD = 0.65
+    start_time = time.time()
     if len(faces) < 1:
         print("no face detected")
         return {"no faces": {}, "attendance": {}}
@@ -272,8 +269,8 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
             session,
         )
         seen_today.add(person_id)
-        print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}") 
-        return {"attendance": created}
+        print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
+        return {"faces": results, "attendance": created, "created": created}
 
     print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}") 
         
