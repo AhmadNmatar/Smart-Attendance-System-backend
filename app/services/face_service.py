@@ -40,7 +40,6 @@ class InsightFaceEmbedder:
         return res
     
     def find_match(self, face, embeddings, session, threshold: float):
-    def find_match(self, face, embeddings, session, threshold: float):
         results = [] 
 
         emb = face.embedding 
