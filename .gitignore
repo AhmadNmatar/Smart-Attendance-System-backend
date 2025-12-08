@@ -29,3 +29,4 @@ env/
 *.txt
 *.db
 *.sqlite3
+*.db
