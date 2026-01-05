@@ -57,7 +57,6 @@ Smart-Attendance-System-backend/
 │   │   ├── face_service.py        # InsightFace embedding & matching
 │   │   └── password_utils.py      # Password hashing utilities
 │   └── enroll_images/             # Temporary storage for enrollment captures
-├── tests/                         # Test data folders (diff_angle, distance_test, etc.)
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This file
 ```
