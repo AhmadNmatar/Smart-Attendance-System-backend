@@ -137,29 +137,14 @@ Once the server is running, access the interactive API documentation:
 - **Swagger UI:** http://localhost:8000/docs
 - **ReDoc:** http://localhost:8000/redoc
 
+
+use Swagger UI to test all endpoint.
 ---
 
 ## 🔐 Authentication
 
 All attendance and person management endpoints require JWT authentication. Use the `/admin/login` endpoint to obtain a token.
 
-### Login Flow
-
-```bash
-# Login to get JWT token
-curl -X POST "http://localhost:8000/admin/login" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
-  -d "username=admin@example.com&password=your-password"
-```
-
-Include the token in subsequent requests:
-
-```bash
-curl -X GET "http://localhost:8000/attendance/records" \
-  -H "Authorization: Bearer <your-jwt-token>"
-```
-
----
 
 ## 📚 API Endpoints
 
@@ -191,56 +176,6 @@ curl -X GET "http://localhost:8000/attendance/records" \
 
 ---
 
-## 🎯 Usage Examples
-
-### 1. Enroll a New Person
-
-```python
-import requests
-
-url = "http://localhost:8000/attendance/enroll"
-headers = {"Authorization": "Bearer <your-token>"}
-data = {
-    "first_name": "John",
-    "last_name": "Doe",
-    "image_path": "/path/to/photo.jpg"
-}
-
-response = requests.post(url, json=data, headers=headers)
-print(response.json())
-```
-
-### 2. Take Attendance
-
-```python
-import requests
-
-url = "http://localhost:8000/attendance/take_attendance"
-headers = {
-    "Authorization": "Bearer <your-token>",
-    "Content-Type": "image/jpeg"
-}
-
-with open("/path/to/capture.jpg", "rb") as f:
-    response = requests.post(url, data=f.read(), headers=headers)
-
-print(response.json())
-```
-
-### 3. Get Attendance Records
-
-```python
-import requests
-
-url = "http://localhost:8000/attendance/records"
-headers = {"Authorization": "Bearer <your-token>"}
-
-response = requests.get(url, headers=headers)
-print(response.json())
-```
-
----
-
 ## 🛡️ Security Features
 
 - **JWT Token Authentication** - Secure stateless authentication
@@ -262,19 +197,7 @@ Key packages used in this project:
 - **PyJWT** - JWT token handling
 - **Uvicorn** - ASGI server
 
----
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
 
 ## 👤 Author
 
