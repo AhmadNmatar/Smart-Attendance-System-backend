@@ -46,7 +46,7 @@ class InsightFaceEmbedder:
         best_score = 0.0 
         best_person = None 
         emb_id = 0
-        for e in embeddings: 
+        for e in embeddings:
             ref_emb = np.frombuffer(e.vector, dtype=np.float32)
             similarity = cosine_similarity(emb, ref_emb) 
             if similarity > best_score: 

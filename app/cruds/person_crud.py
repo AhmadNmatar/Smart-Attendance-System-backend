@@ -25,3 +25,6 @@ def get_person_by_embedding_id(embedding_id: int, session: Session) -> PersonPub
     if not person:
         return None  
     return PersonPublic.model_validate(person)
+
+def get_all(session: Session):
+    return session.exec(select(Person)).all()

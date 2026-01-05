@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException, Depends, Request, status
 from pydantic import BaseModel
 from typing import Optional, List, Annotated
-import cv2, subprocess, sys, numpy as np, os, time, psutil
+import cv2, subprocess, sys, numpy as np, os, time # psutil
 from app.services.face_service import InsightFaceEmbedder, calculate_embeddings_avg, cosine_similarity
 from app.config.dbsetup import engine
 from app.models.person import PersonCreate
 from app.models.embedding import Embedding
 from app.models.attendance import AttendanceCreate
-from app.cruds.embedding_crud import add_new_emb, get_all
-from app.cruds.person_crud import create_person, get_person_by_embedding_id
+from app.cruds.embedding_crud import add_new_emb, get_all_embeddings
+from app.cruds.person_crud import create_person, get_person_by_embedding_id, get_all
 from app.cruds.attendance_crud import add_attendance
 from app.services.auth import get_current_admin
 from app.models.administrator import Administrator
@@ -218,7 +218,8 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
 
     
     THRESHOLD = 0.65
-    embeddings = get_all(session)
+    start_time = time.time()
+    embeddings = get_all_embeddings(session)
     if not embeddings:
         return {"No embeddings found in db"}
 
@@ -232,6 +233,14 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
 
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
 
+
+    with open("last.txt", "a") as f:
+        f.write(f"CoreMLExecutionProvider\n")
+        f.write(f"Threshold: {THRESHOLD}\n")
+        f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
+        f.write(f"Time to get faces: {time_to_faces:.4f} seconds\n")
+        f.write(f"Time to find match: {time_to_match:.4f} seconds\n")
+        f.write(f"Match results: {results}\n\n")
 
     created = {}
 
@@ -253,3 +262,19 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
         
 
     return {"faces": results, "attendance": {}, "created": created}
+
+
+@router.get("/absent")
+def mark_user_absent(session: SessionDep, current_user: current_admin_dep):
+    users = get_all(session)
+    absent_users = []
+    for user in users:
+       if user.person_id not in seen_today:
+            absent =  add_attendance(
+            AttendanceCreate(person_id=user.person_id, status_id=2),
+            session,
+            )
+            absent_users.append(absent)
+    
+    return {"attendance": absent_users}
+

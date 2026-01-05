@@ -81,12 +81,13 @@ ALGORITHM="HS256"
 Start the FastAPI server:
 
 ``` bash
-uvicorn main:app --reload
+uvicorn main:app 
 ```
 or
 
 ```bash
-fastapi run app/main.py --reload 
+fastapi run app/main.py  
+
 ```
 ## 📄 API Documentation
 
