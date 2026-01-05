@@ -28,7 +28,6 @@ def signup_admin(admin: AdministratorCreate, session: SessionDep):
 @admin_router.post("/login", response_model=TokenResponse)
 def login(session: SessionDep, form_data: Annotated[OAuth2PasswordRequestForm, Depends()]):
     try:
-        print(form_data.username)
         admin = verify_admin(form_data.username, form_data.password, session)
     except ValueError:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid email or password")

@@ -12,7 +12,6 @@ current_admin_dep = Annotated[Administrator, Depends(get_current_admin)]
 person_router = APIRouter(prefix="/person", tags=["Person"])
 
 
-# need to add current_admin_dep so only authorized user can make request
 
 @person_router.post("/", response_model=PersonPublic)
 def create_new_person(person: PersonCreate, session: SessionDep, current_user: current_admin_dep)-> PersonPublic:

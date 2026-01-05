@@ -234,18 +234,9 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
     results = embedder.find_match(face=faces[0], embeddings=embeddings, session=session, threshold=THRESHOLD)
 
 
-    with open("last.txt", "a") as f:
-        f.write(f"CoreMLExecutionProvider\n")
-        f.write(f"Threshold: {THRESHOLD}\n")
-        f.write(f"Time to convert to image: {time_to_image:.4f} seconds\n")
-        f.write(f"Time to get faces: {time_to_faces:.4f} seconds\n")
-        f.write(f"Time to find match: {time_to_match:.4f} seconds\n")
-        f.write(f"Match results: {results}\n\n")
-
     created = {}
 
     if not results[0]["matched"]:
-        print(f"{{score: {results[0]['score']},\n name: {results[0]['name']},\n gissed : {results[0]['gussed']} ,\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
         return {"faces": results, "attendance": []}
     
     person_id = results[0]["person_id"]
@@ -258,7 +249,6 @@ async def take_attendace(request: Request, session: SessionDep, current_user: cu
         print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}")
         return {"faces": results, "attendance": created, "created": created}
 
-    print(f"{{score: {results[0]['score']},\n name: {results[0]['first_name']},\n age: {faces[0]['age']},\n gender: {faces[0]['gender']},\n threshold: {THRESHOLD:.2f} }}") 
         
 
     return {"faces": results, "attendance": {}, "created": created}
